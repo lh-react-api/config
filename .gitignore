@@ -1,0 +1,7 @@
+minio/data
+minio/config
+
+mysql/data
+
+*.log
+logs

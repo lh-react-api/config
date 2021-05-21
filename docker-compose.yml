@@ -1,0 +1,84 @@
+version: '3.8'
+services:
+  # CentOS 7 & nginx
+  server:
+    container_name: 'server'
+    build: ./server
+    ports:
+      - '80:80'
+    tty: true
+    depends_on:
+      - php
+    restart: always
+    privileged: true
+    command: 
+      - /sbin/init
+    volumes:
+      - ./../api:/var/www/html
+      - ./server/nginx/logs:/var/log/nginx
+      - ./server/nginx/conf:/etc/nginx/conf.d
+  
+  # php(ComposerとNodeのコンテナでもある)
+  php:
+    container_name: 'php'
+    build: ./php
+    ports:
+      - '9000'
+    restart: always
+    tty: true
+    volumes:
+      - ./../api:/var/www/html
+  
+  # MySQL
+  mysql:
+    container_name: 'mysql'
+    build: ./mysql
+    ports:
+      - '13307:3306'
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: api_db
+      MYSQL_USER: api_user
+      MYSQL_PASSWORD: p@ssw0rd
+      TZ: 'Asia/Tokyo'
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/logs:/var/log/mysql
+
+  # mail (hostへのmail送信設定がめんどくさいので、docker上だけでmail送信できるようにする)
+  mail:
+    container_name: mail
+    image: mailhog/mailhog
+    ports:
+        - "8025:8025"
+        - "1025:1025"
+      
+  # minio (object storage)
+  minio:
+    container_name: minio
+    image: minio/minio:latest
+    ports:
+      - 9000:9000
+    volumes:
+      - ./minio/data:/export
+      - ./minio/config:/root/.minio
+    environment:
+      MINIO_ACCESS_KEY: minio_access_key
+      MINIO_SECRET_KEY: minio_secret_key
+    command: server /export 
+
+  # minio (起動用コンテナ)
+  createbuckets:
+    container_name: createbuckets
+    image: minio/mc
+    depends_on:
+      - minio
+    entrypoint: >
+      /bin/sh -c "
+      until (/usr/bin/mc config host add myminio http://minio:9000 minio_access_key minio_secret_key) do echo '...waiting...' && sleep 1; done;
+      /usr/bin/mc mb myminio/bucket;
+      /usr/bin/mc policy download myminio/bucket;
+      exit 0;
+      "
+      
