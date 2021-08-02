@@ -81,4 +81,13 @@ services:
       /usr/bin/mc policy download myminio/bucket;
       exit 0;
       "
-      
+
+  adminer:
+    container_name: adminer
+    hostname: adminer
+    image: adminer:latest
+    restart: always
+    ports:
+      - 18080:8080
+    depends_on:
+      - mysql
