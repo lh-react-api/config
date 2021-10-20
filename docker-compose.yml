@@ -46,6 +46,23 @@ services:
       - ./mysql/data:/var/lib/mysql
       - ./mysql/logs:/var/log/mysql
 
+#  # MySQL M1チップ用
+#  mysql_m1:
+#    container_name: 'mysql_m1'
+#    build: mysql_m1
+#    ports:
+#      - '13307:3306'
+#    restart: always
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_DATABASE: api_db
+#      MYSQL_USER: api_user
+#      MYSQL_PASSWORD: p@ssw0rd
+#      TZ: 'Asia/Tokyo'
+#    volumes:
+#      - ./mysql_m1/data:/var/lib/mysql
+#      - ./mysql_m1/logs:/var/log/mysql
+
   # mail (hostへのmail送信設定がめんどくさいので、docker上だけでmail送信できるようにする)
   mail:
     container_name: mail
@@ -91,3 +108,4 @@ services:
       - 18080:8080
     depends_on:
       - mysql
+      - mysql_m1
