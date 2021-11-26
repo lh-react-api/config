@@ -101,7 +101,7 @@ services:
       exit 0;
       "
   # topic: https://www.ritolab.com/entry/232
-  #
+  # topic: https://qiita.com/terukizm/items/6850aa316de425e3e3b4
   adminer:
     container_name: adminer
     hostname: adminer
