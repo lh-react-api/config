@@ -46,6 +46,23 @@ services:
       - ./mysql/data:/var/lib/mysql
       - ./mysql/logs:/var/log/mysql
 
+  # MySQL M1チップ用
+#  mysql_m1:
+#    container_name: 'mysql_m1'
+#    build: mysql_m1
+#    ports:
+#      - '13307:3306'
+#    restart: always
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_DATABASE: api_db
+#      MYSQL_USER: api_user
+#      MYSQL_PASSWORD: p@ssw0rd
+#      TZ: 'Asia/Tokyo'
+#    volumes:
+#      - ./mysql_m1/data:/var/lib/mysql
+#      - ./mysql_m1/logs:/var/log/mysql
+
   # mail (hostへのmail送信設定がめんどくさいので、docker上だけでmail送信できるようにする)
   mail:
     container_name: mail
@@ -59,14 +76,16 @@ services:
     container_name: minio
     image: minio/minio:latest
     ports:
-      - 9000:9000
+      - '9000:9000'
+      - '9001:9001'
     volumes:
       - ./minio/data:/export
       - ./minio/config:/root/.minio
     environment:
-      MINIO_ACCESS_KEY: minio_access_key
-      MINIO_SECRET_KEY: minio_secret_key
-    command: server /export 
+      MINIO_ROOT_USER: minio_secret_key
+      MINIO_ROOT_PASSWORD: minio_access_key
+    entrypoint: bash
+    command: -c "/opt/bin/minio server /export --console-address :9001"
 
   # minio (起動用コンテナ)
   createbuckets:
@@ -76,12 +95,13 @@ services:
       - minio
     entrypoint: >
       /bin/sh -c "
-      until (/usr/bin/mc config host add myminio http://minio:9000 minio_access_key minio_secret_key) do echo '...waiting...' && sleep 1; done;
-      /usr/bin/mc mb myminio/bucket;
-      /usr/bin/mc policy download myminio/bucket;
+      until (/usr/bin/mc config host add myminio http://minio:9000 minio_secret_key minio_access_key) do echo '...waiting...' && sleep 1; done;
+      /usr/bin/mc mb myminio/roucus;
+      /usr/bin/mc policy download myminio/roucus;
       exit 0;
       "
-
+  # topic: https://www.ritolab.com/entry/232
+  # topic: https://qiita.com/terukizm/items/6850aa316de425e3e3b4
   adminer:
     container_name: adminer
     hostname: adminer
@@ -91,3 +111,4 @@ services:
       - 18080:8080
     depends_on:
       - mysql
+      - mysql_m1
