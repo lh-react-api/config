@@ -111,4 +111,3 @@ services:
       - 18080:8080
     depends_on:
       - mysql
-      - mysql_m1
