@@ -2,13 +2,13 @@ version: '3.8'
 services:
   # CentOS 9 & nginx
   sg_server:
-    container_name: 'server'
+    container_name: sg_server
     build: ./server
     ports:
       - '8080:8080'
     tty: true
     depends_on:
-      - php
+      - sg_php
     restart: always
     privileged: true
     command: 
@@ -20,7 +20,7 @@ services:
   
   # php(ComposerとNodeのコンテナでもある)
   sg_php:
-    container_name: 'php'
+    container_name: sg_php
     build: ./php
     ports:
       - '9000'
@@ -31,7 +31,7 @@ services:
   
   # MySQL
   sg_mysql:
-    container_name: 'mysql'
+    container_name: sg_mysql
     build: ./mysql
     ports:
       - '13307:3306'
@@ -65,7 +65,7 @@ services:
 
   # mail (hostへのmail送信設定がめんどくさいので、docker上だけでmail送信できるようにする)
   sg_mail:
-    container_name: mail
+    container_name: sg_mail
     image: mailhog/mailhog
     ports:
         - "8025:8025"
@@ -73,7 +73,7 @@ services:
       
   # minio (object storage)
   sg_minio:
-    container_name: minio
+    container_name: sg_minio
     image: minio/minio:RELEASE.2021-09-15T04-54-25Z
     ports:
       - '9000:9000'
@@ -89,25 +89,25 @@ services:
 
   # minio (起動用コンテナ)
   sg_createbuckets:
-    container_name: createbuckets
+    container_name: sg_createbuckets
     image: minio/mc
     depends_on:
-      - minio
+      - sg_minio
     entrypoint: >
       /bin/sh -c "
       until (/usr/bin/mc config host add myminio http://minio:9000 minio_secret_key minio_access_key) do echo '...waiting...' && sleep 1; done;
-      /usr/bin/mc mb myminio/roucus;
-      /usr/bin/mc policy download myminio/roucus;
+      /usr/bin/mc mb myminio/smart_garage;
+      /usr/bin/mc policy download myminio/smart_garage;
       exit 0;
       "
   # topic: https://www.ritolab.com/entry/232
   # topic: https://qiita.com/terukizm/items/6850aa316de425e3e3b4
   sg_adminer:
-    container_name: adminer
+    container_name: sg_adminer
     hostname: adminer
     image: adminer:latest
     restart: always
     ports:
       - 18080:8080
     depends_on:
-      - mysql
+      - sg_mysql

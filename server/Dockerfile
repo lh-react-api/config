@@ -1,4 +1,4 @@
-FROM centos:9
+FROM centos:7
 
 # hostとdockerの日付合わせ
 RUN /bin/cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
@@ -7,10 +7,10 @@ RUN /bin/cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 RUN yum update -y
 
 # epel リポジトリをinstall
-RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
 # nginxのinstall
-RUN yum -y install \ 
+RUN yum -y install \
     nginx \
     logrotate
 
