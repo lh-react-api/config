@@ -34,7 +34,7 @@ login-php:
 	docker-compose exec php bash
 
 login-mysql:
-	docker-compose exec mysql bash -c "mysql -u user -p"
+	docker-compose exec sg_mysql bash -c "mysql -u user -p"
 
 login-server:
-	docker-compose exec server bash
+	docker-compose exec sg_server bash
