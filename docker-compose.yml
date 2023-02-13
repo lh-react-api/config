@@ -111,3 +111,28 @@ services:
       - 18080:8080
     depends_on:
       - sg_mysql
+
+  swagger-ui:
+    image: swaggerapi/swagger-ui
+    container_name: "swagger-ui"
+    ports:
+      - "8888:8080"
+    volumes:
+      - ./docs:/usr/share/nginx/html/docs
+    environment:
+      - URL=./docs/openapi.yml
+
+  swagger-merger:
+    build:
+      dockerfile: ./docker/swagger-merger/Dockerfile
+    command: >
+      watch 'swagger-merger -i /docs/src/index.yaml -o /docs/openapi.yml' /docs/src/
+    volumes:
+      - ./docs:/docs
+
+  openapi-generator-server:
+    image: openapitools/openapi-generator-cli
+    volumes:
+      - ./docs/:/docs
+    # https://openapi-generator.tech/docs/generators/
+    command: generate -g typescript --additional-properties=aspnetCoreVersion=3.1 -i docs/openapi.yml -o docs/server

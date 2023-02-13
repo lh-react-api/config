@@ -38,3 +38,6 @@ login-mysql:
 
 login-server:
 	docker-compose exec sg_server bash
+
+export-type:
+	docker-compose up openapi-generator-server
