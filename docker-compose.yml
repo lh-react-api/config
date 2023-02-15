@@ -112,27 +112,38 @@ services:
     depends_on:
       - sg_mysql
 
-  swagger-ui:
+  sg_swagger-ui:
+    container_name: sg_swagger
     image: swaggerapi/swagger-ui
-    container_name: "swagger-ui"
     ports:
       - "8888:8080"
     volumes:
       - ./docs:/usr/share/nginx/html/docs
     environment:
-      - URL=./docs/openapi.yml
+      - URL=./docs/openapi.yaml
 
-  swagger-merger:
+  sg_swagger-merger:
+    container_name: sg_swagger-merger
     build:
-      dockerfile: ./docker/swagger-merger/Dockerfile
+      dockerfile: ./swagger-merger/Dockerfile
     command: >
-      watch 'swagger-merger -i /docs/src/index.yaml -o /docs/openapi.yml' /docs/src/
+      watch 'swagger-merger -i /docs/src/index.yaml -o /docs/openapi.yaml' /docs/src/
     volumes:
       - ./docs:/docs
 
-  openapi-generator-server:
-    image: openapitools/openapi-generator-cli
+
+#  openapi-generator-server:
+#    image: openapitools/openapi-generator-cli
+#    volumes:
+#      - ./docs/:/docs
+#    # https://openapi-generator.tech/docs/generators/
+#    # https://openapi-generator.tech/docs/generators/php-laravel
+#    command: generate -g typescript --additional-properties=aspnetCoreVersion=3.1 -i docs/openapi.yaml -o docs/server
+#//    "start": "node index.js",
+
+  sg_swagger_openapi2aspida:
+    container_name: sg_swagger_openapi2aspida
+    build: ./openapi2aspida
     volumes:
-      - ./docs/:/docs
-    # https://openapi-generator.tech/docs/generators/
-    command: generate -g typescript --additional-properties=aspnetCoreVersion=3.1 -i docs/openapi.yml -o docs/server
+      - ./openapi2aspida/:/openapi2aspida
+      - ./docs:/docs

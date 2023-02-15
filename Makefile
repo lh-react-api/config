@@ -39,5 +39,10 @@ login-mysql:
 login-server:
 	docker-compose exec sg_server bash
 
-export-type:
+generate-type:
+	docker-compose up sg_swagger_openapi2aspida
+
+generate-type2:
 	docker-compose up openapi-generator-server
+rms:
+	docker rm sg_swagger_openapi2aspida && docker rmi config-sg_swagger_openapi2aspida
