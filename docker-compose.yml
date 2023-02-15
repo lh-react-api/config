@@ -111,3 +111,39 @@ services:
       - 18080:8080
     depends_on:
       - sg_mysql
+
+  sg_swagger-ui:
+    container_name: sg_swagger
+    image: swaggerapi/swagger-ui
+    ports:
+      - "8888:8080"
+    volumes:
+      - ./docs:/usr/share/nginx/html/docs
+    environment:
+      - URL=./docs/openapi.yaml
+
+  sg_swagger-merger:
+    container_name: sg_swagger-merger
+    build:
+      dockerfile: ./swagger-merger/Dockerfile
+    command: >
+      watch 'swagger-merger -i /docs/src/index.yaml -o /docs/openapi.yaml' /docs/src/
+    volumes:
+      - ./docs:/docs
+
+
+#  openapi-generator-server:
+#    image: openapitools/openapi-generator-cli
+#    volumes:
+#      - ./docs/:/docs
+#    # https://openapi-generator.tech/docs/generators/
+#    # https://openapi-generator.tech/docs/generators/php-laravel
+#    command: generate -g typescript --additional-properties=aspnetCoreVersion=3.1 -i docs/openapi.yaml -o docs/server
+#//    "start": "node index.js",
+
+  sg_swagger_openapi2aspida:
+    container_name: sg_swagger_openapi2aspida
+    build: ./openapi2aspida
+    volumes:
+      - ./openapi2aspida/:/openapi2aspida
+      - ./docs:/docs
