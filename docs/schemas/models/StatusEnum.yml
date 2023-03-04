@@ -1,0 +1,6 @@
+title: StatusEnum
+type: string
+enum:
+  - EDIT
+  - WAITING
+  - APPLIED

@@ -16,6 +16,42 @@ paths:
     $ref: ./paths/tasks/index.yaml
   /tasks/{id}:
     $ref: ./paths/tasks/show.yaml
+  /users:
+    get:
+      description: ユーザー一覧取得
+      responses:
+        '200':
+          description: '200'
+          content:
+            application/json:
+              schema:
+                $ref: ./responses/UserResponse.yml
+  '/users/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+        description: ユーザーId
+    put:
+      description: ユーザー情報更新
+      parameters:
+        - in: query
+          name: status
+          description: 現在のステータス
+          schema:
+            $ref: ./schemas/models/StatusEnum.yml
+      requestBody:
+        description: リクエスト
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: ./requests/UpdateUserRequest.yml
+      responses:
+        '200':
+          description: 200 ok
 components:
   schemas:
     Task:
