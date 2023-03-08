@@ -15,6 +15,15 @@ up:
 	docker-compose up -d && \
     docker-compose exec sg_server bash -c "systemctl start nginx && systemctl enable nginx"
 
+nginx_start:
+	docker-compose exec sg_server bash -c "systemctl start nginx && systemctl enable nginx && systemctl status nginx"
+
+ssh_php:
+	docker-compose exec sg_php bash
+
+migrate_fresh:
+	docker-compose exec sg_php bash -c "php artisan migrate:fresh --seed"
+
 restart:
 	docker-compose restart
 
