@@ -22,7 +22,7 @@ ssh_php:
 	docker-compose exec sg_php bash
 
 migrate_fresh:
-	docker-compose exec sg_php bash -c "php artisan migrate:fresh --seed"
+	docker-compose exec sg_php bash -c "php artisan migrate:fresh --seed && php artisan vendor:publish --tag=sanctum-migrations"
 
 restart:
 	docker-compose restart
