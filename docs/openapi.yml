@@ -26,7 +26,13 @@ components:
       $ref: ./schemas/models/Address.yml
     Credit:
       $ref: ./schemas/models/Credit.yml
+    CreditDetail:
+      $ref: ./schemas/models/CreditDetail.yml
+    AuthSignupResponse:
+      $ref: ./responses/auth/AuthSignupResponse.yml
     UserResponse:
-      $ref: ./responses/UserResponse.yml
+      $ref: ./responses/users/UserResponse.yml
+    UserShowResponse:
+      $ref: ./responses/users/UserShowResponse.yml
     UsersResponse:
-      $ref: ./responses/UsersResponse.yml
+      $ref: ./responses/users/UsersResponse.yml

@@ -1,3 +1,0 @@
-title: UserResponse
-allOf:
-  - $ref: ../schemas/models/User.yml

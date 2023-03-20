@@ -9,4 +9,4 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../../responses/UserShowResponse.yml
+            $ref: ../../../responses/users/UserShowResponse.yml
