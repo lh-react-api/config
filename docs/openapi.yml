@@ -10,6 +10,8 @@ servers:
       server:
         default: http://localhost:3000
 paths:
+  /auth/signin:
+    $ref: ./paths/auth/signin/index.yml
   /users:
     $ref: ./paths/users/index.yml
   '/users/{userId}':
