@@ -1,0 +1,7 @@
+title: StatusEnum
+type: string
+description: ステータス
+enum:
+  - GOOGLE
+  - AMAZON
+example: WITHDRAWAL

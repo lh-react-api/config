@@ -1,0 +1,7 @@
+title: SocialEnum
+type: string
+description: ソーシャル認証
+enum:
+  - GOOGLE
+  - AMAZON
+example: GOOGLE

@@ -41,7 +41,7 @@ paths:
           name: status
           description: 現在のステータス
           schema:
-            $ref: ./schemas/models/StatusEnum.yml
+            $ref: ./schemas/models/enum/StatusEnum.yml
       requestBody:
         description: リクエスト
         required: true

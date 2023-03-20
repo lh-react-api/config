@@ -4,12 +4,50 @@ properties:
   id:
     type: string
     description: id
-  name:
+    example: 1
+  email:
     type: string
-    description: 名前
-  age:
+    description: メールアドレス
+    example: "ishikawa@sg.sandbox"
+  emailVerifiedAt:
     type: string
-    description: 歳
+    nullable: true
+    description: Laravelのメール認証日時
+    example: "2023-03-14 19:39:38"
+  social:
+    nullable: true
+    $ref: ../enum/users/SocialEnum.yml
+  isAdmin:
+    type: boolean
+    description: 管理者フラグ
+    example: false
+  status:
+    $ref: ../enum/users/StatusEnum.yml
+  statusLabel:
+    type: string
+    description: ステータスのラベル
+    example: 退会
+  addresses:
+    type: array
+    nullable: true
+    items:
+      $ref: ./Address.yaml
+  defaultAddresses:
+    nullable: true
+    $ref: ./Address.yaml
+  credits:
+    type: array
+    nullable: true
+    items:
+      $ref: ./Credit.yaml
 required:
   - id
-  - name
+  - email
+  - emailVerifiedAt
+  - social
+  - isAdmin
+  - status
+  - statusLabel
+  - addresses
+  - defaultAddresses
+  - credits

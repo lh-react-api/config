@@ -1,0 +1,87 @@
+title: Address
+type: object
+properties:
+  id:
+    type: integer
+    description: 住所ID
+    example: 1
+  userId:
+    type: integer
+    description: ユーザーID
+    example: 1
+  lastName:
+    type: string
+    description: 苗字
+    example: 伊地
+  lastNameKana:
+    type: string
+    description: 苗字（かな）
+    example: いじち
+  firstName:
+    type: string
+    description: 名前
+    example: 知虹夏
+  firstNameKana:
+    type: string
+    description: 名前（かな）
+    example: にじか
+  postNumber:
+    type: string
+    description: 郵便番号
+    example: 1558666
+  prefectureName:
+    type: string
+    description: 都道府県
+    example: 東京都
+  city:
+    type: string
+    description: 市区町村
+    example: 世田谷区
+  block:
+    type: string
+    description: 番地
+    example: 北沢2-8-18
+  building:
+    type: string
+    nullable: true
+    description: 建物名・部屋番号
+    example: 北沢タウンホール内
+  isDefault:
+    type: boolean
+    description: デフォルトフラグ
+    example: true
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
+required:
+  - id
+  - userId
+  - lastName
+  - lastNameKana
+  - firstName
+  - firstNameKana
+  - postNumber
+  - prefectureName
+  - city
+  - block
+  - building
+  - isDefault
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy

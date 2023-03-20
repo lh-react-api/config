@@ -1,0 +1,25 @@
+title: Credit
+type: object
+properties:
+  company:
+    type: string
+    description: カード会社
+    example: カード会社
+  anderNumber:
+    type: string
+    description: 下４桁
+    example: 下４桁
+  ttl:
+    type: string
+    description: 有効期限
+    example: 有効期限
+  availability:
+    type: string
+    description: 利用可否
+    example: 利用可否
+required:
+  - type
+  - anderNumber
+  - ttl
+  - availability
+
