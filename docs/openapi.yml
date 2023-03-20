@@ -13,8 +13,9 @@ paths:
   /users:
     $ref: ./paths/users/index.yml
   '/users/{id}':
-    $ref: ./paths/users/show.yml
-
+    $ref: ./paths/users/id/index.yml
+  '/users/{id}/email':
+    $ref: ./paths/users/id/email/index.yml
 components:
   schemas:
     User:
@@ -23,3 +24,7 @@ components:
       $ref: ./schemas/models/Address.yml
     Credit:
       $ref: ./schemas/models/Credit.yml
+    UserResponse:
+      $ref: ./responses/UserResponse.yml
+    UsersResponse:
+      $ref: ./responses/UsersResponse.yml

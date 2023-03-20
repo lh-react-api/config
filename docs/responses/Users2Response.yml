@@ -1,9 +1,0 @@
-title: UsersResponse
-type: object
-properties:
-  data:
-    type: array
-    items:
-      $ref: "../schemas/models/User.yml"
-required:
-  - data
