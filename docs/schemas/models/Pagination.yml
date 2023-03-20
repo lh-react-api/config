@@ -40,3 +40,14 @@ properties:
     description: 検索ヒット数
     type: integer
     example: 8
+required:
+  - current_page
+  - from
+  - last_page
+  - last_page_url
+  - next_page_url
+  - path
+  - per_page
+  - prev_page_url
+  - to
+  - total

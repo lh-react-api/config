@@ -14,7 +14,7 @@ properties:
     description: stripe顧客ID
     example: XXXXX003
   detail:
-    $ref: ./CreditDetail.yaml
+    $ref: ./CreditDetail.yml
   createdAt:
     type: string
     format: date-time

@@ -16,4 +16,4 @@ RUN npm install -g openapi2aspida
 #CMD openapi2aspida -v
 
 # date +"_%Y_%m%d_%I%M"
-CMD openapi2aspida -i /docs/openapi.yaml -o /openapi2aspida/src/generated/api$(date +"_%Y_%m%d_%I%M%S")
+CMD openapi2aspida -i /docs/openapi.yml -o /openapi2aspida/src/generated/api$(date +"_%Y_%m%d_%I%M%S")

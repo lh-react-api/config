@@ -27,19 +27,6 @@ properties:
     type: string
     description: ステータスのラベル
     example: 退会
-  addresses:
-    type: array
-    nullable: true
-    items:
-      $ref: ./Address.yaml
-  defaultAddresses:
-    nullable: true
-    $ref: ./Address.yaml
-  credits:
-    type: array
-    nullable: true
-    items:
-      $ref: ./Credit.yaml
 required:
   - id
   - email
@@ -48,6 +35,3 @@ required:
   - isAdmin
   - status
   - statusLabel
-  - addresses
-  - defaultAddresses
-  - credits

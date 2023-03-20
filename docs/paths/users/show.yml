@@ -1,0 +1,30 @@
+get:
+  tags:
+    - users
+  summary: ユーザ詳細
+  description: ユーザの詳細を取得する
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../responses/UserResponse.yml
+put:
+  description: ユーザー情報更新
+  parameters:
+    - in: query
+      name: status
+      description: 現在のステータス
+      schema:
+        $ref: ../../schemas/enum/StatusEnum.yml
+  requestBody:
+    description: リクエスト
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../requests/UpdateUserRequest.yml
+  responses:
+    '200':
+      description: 200 ok
