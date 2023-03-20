@@ -1,0 +1,10 @@
+title: UpdateUserEmailRequest
+type: object
+properties:
+  email:
+    type: string
+    description: メールアドレス
+    example: "ishikawa@sg.sandbox"
+
+required:
+  - email

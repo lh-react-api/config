@@ -1,0 +1,31 @@
+put:
+  tags:
+    - users
+  description: ユーザメールアドレス情報更新
+  parameters:
+    - in: query
+      name: status
+      description: 現在のステータス
+      schema:
+        $ref: ../../../../schemas/enum/StatusEnum.yml
+    - in: path
+      name: userId
+      description: ユーザID
+      schema:
+        type: integer
+        description: ユーザID
+        example: 1
+  requestBody:
+    description: リクエスト
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../../../requests/UpdateUserEmailRequest.yml
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../../responses/UserResponse.yml

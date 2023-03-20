@@ -1,9 +1,0 @@
-title: UpdateUserRequest
-type: object
-properties:
-  name:
-    type: string
-    description: 名前
-  age:
-    type: string
-    description: 歳

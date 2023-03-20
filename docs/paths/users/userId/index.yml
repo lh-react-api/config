@@ -1,0 +1,12 @@
+get:
+  tags:
+    - users
+  summary: ユーザ詳細
+  description: ユーザの詳細を取得する
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../responses/UserShowResponse.yml

@@ -12,10 +12,10 @@ servers:
 paths:
   /users:
     $ref: ./paths/users/index.yml
-  '/users/{id}':
-    $ref: ./paths/users/id/index.yml
-  '/users/{id}/email':
-    $ref: ./paths/users/id/email/index.yml
+  '/users/{userId}':
+    $ref: ./paths/users/userId/index.yml
+  '/users/{userId}/email':
+    $ref: ./paths/users/userId/email/index.yml
 components:
   schemas:
     User:

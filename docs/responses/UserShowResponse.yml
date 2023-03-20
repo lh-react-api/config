@@ -1,0 +1,18 @@
+title: UserShowResponse
+allOf:
+  - $ref: ../schemas/models/User.yml
+  - properties:
+      addresses:
+        type: array
+        items:
+          $ref: ../schemas/models/Address.yml
+  - properties:
+      defaultAddresses:
+        $ref: ../schemas/models/Address.yml
+  - properties:
+      credits:
+        $ref: ../schemas/models/Credit.yml
+required:
+  - addresses
+  - defaultAddresses
+  - credits
