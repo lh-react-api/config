@@ -1,0 +1,7 @@
+in: path
+name: userId
+description: ユーザID
+schema:
+  type: integer
+  description: ユーザID
+  example: 1

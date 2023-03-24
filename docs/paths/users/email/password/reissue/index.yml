@@ -1,4 +1,4 @@
-put:
+patch:
   tags:
     - users
   summary: パスワード再設定依頼

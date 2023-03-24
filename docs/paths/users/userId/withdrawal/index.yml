@@ -1,8 +1,8 @@
-patch:
+delete:
   tags:
     - users
-  summary: ユーザパスワード情報更新
-  description: ユーザパスワード情報更新
+  summary: ユーザ退会
+  description: ユーザ退会
   parameters:
     - $ref: ../../../../params/UserId.yml
   requestBody:

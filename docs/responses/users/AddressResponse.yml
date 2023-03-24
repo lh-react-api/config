@@ -1,0 +1,3 @@
+title: AddressResponse
+allOf:
+  - $ref: ../../schemas/models/Address.yml

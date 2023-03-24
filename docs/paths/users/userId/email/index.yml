@@ -1,6 +1,7 @@
-put:
+patch:
   tags:
     - users
+  summary: ユーザメールアドレス情報更新
   description: ユーザメールアドレス情報更新
   parameters:
 #    - in: query
@@ -8,13 +9,7 @@ put:
 #      description: 現在のステータス
 #      schema:
 #        $ref: ../../../../schemas/enum/StatusEnum.yml
-    - in: path
-      name: userId
-      description: ユーザID
-      schema:
-        type: integer
-        description: ユーザID
-        example: 1
+    - $ref: ../../../../params/UserId.yml
   requestBody:
     description: リクエスト
     required: true
