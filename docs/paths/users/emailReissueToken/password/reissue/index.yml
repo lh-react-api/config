@@ -1,0 +1,27 @@
+put:
+  tags:
+    - users
+  summary: パスワード再設定依頼
+  description: 対象のユーザにトークンURL付きのメールを送信する。（ローカルの場合はmailhogで確認して）
+  parameters:
+    - in: path
+      name: email_reissue_token
+      description: メール再発行トークン
+      schema:
+        type: string
+        description: メール再発行トークン
+        example: XXXXXXXXXXXXXXX
+  requestBody:
+    description: リクエスト
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../../../../requests/users/UpdateUserPasswordRequest.yml
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../../../responses/users/UserResponse.yml
