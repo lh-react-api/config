@@ -1,13 +1,8 @@
 put:
   tags:
     - users
-  description: ユーザメールアドレス情報更新
+  description: ユーザパスワード情報更新
   parameters:
-#    - in: query
-#      name: status
-#      description: 現在のステータス
-#      schema:
-#        $ref: ../../../../schemas/enum/StatusEnum.yml
     - in: path
       name: userId
       description: ユーザID
@@ -21,7 +16,7 @@ put:
     content:
       application/json:
         schema:
-          $ref: ../../../../requests/users/UpdateUserEmailRequest.yml
+          $ref: ../../../../requests/users/UpdateUserPasswordRequest.yml
   responses:
     '200':
       description: '200'

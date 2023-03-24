@@ -22,12 +22,14 @@ paths:
     $ref: ./paths/users/userId/index.yml
   '/users/{userId}/email':
     $ref: ./paths/users/userId/email/index.yml
+  '/users/{userId}/password':
+    $ref: ./paths/users/userId/password/index.yml
 #  '/users/{userId}/withdrawal':
 #    $ref: ./paths/users/userId/withdrawal/index.yml
 #  '/users/{userId}/addresses/isDefault':
 #    $ref: ./paths/users/userId/addresses/isDefault/index.yml
-#  '/users/{email}/password/reissue':
-#    $ref: ./paths/users/email/password/reissue/index.yml
+  '/users/{email}/password/reissue':
+    $ref: ./paths/users/email/password/reissue/index.yml
 #  '/users/{email_reissue_token}/password/reissue':
 #    $ref: ./paths/users/emailReissueToken/password/reissue/index.yml
 #  '/users/{userId}/password':
