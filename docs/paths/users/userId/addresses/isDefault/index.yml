@@ -18,4 +18,4 @@ patch:
       content:
         application/json:
           schema:
-            $ref: ../../../../../responses/users/AddressesResponse.yml
+            $ref: ../../../../../responses/addresses/AddressesResponse.yml

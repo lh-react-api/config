@@ -8,6 +8,7 @@ properties:
   email:
     type: string
     description: メールアドレス
+    maxLength: 255
     example: "ishikawa@sg.sandbox"
   emailVerifiedAt:
     type: string

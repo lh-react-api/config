@@ -12,6 +12,7 @@ properties:
   stripeCustomerId:
     type: string
     description: stripe顧客ID
+    maxLength: 128
     example: XXXXX003
   detail:
     $ref: ./CreditDetail.yml

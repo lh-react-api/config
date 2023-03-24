@@ -1,10 +1,6 @@
-title: Address
+title: CreateAddressRequest
 type: object
 properties:
-  id:
-    type: integer
-    description: 住所ID
-    example: 1
   userId:
     type: integer
     description: ユーザーID
@@ -56,30 +52,8 @@ properties:
     description: 建物名・部屋番号
     maxLength: 128
     example: 北沢タウンホール内
-  isDefault:
-    type: boolean
-    description: デフォルトフラグ
-    example: true
-  createdAt:
-    type: string
-    format: date-time
-    description: 作成日
-    example: "2023-03-14 19:32:41"
-  updatedAt:
-    type: string
-    format: date-time
-    description: 更新日
-    example: "2023-03-15 18:03:09"
-  createdBy:
-    type: integer
-    description: 作成者
-    example: 1
-  updatedBy:
-    type: integer
-    description: 更新者
-    example: 1
+
 required:
-  - id
   - userId
   - lastName
   - lastNameKana
@@ -89,9 +63,3 @@ required:
   - prefectureName
   - city
   - block
-  - building
-  - isDefault
-  - createdAt
-  - updatedAt
-  - createdBy
-  - updatedBy
