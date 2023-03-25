@@ -13,25 +13,25 @@ paths:
   # 認証
   /auth/signin:
     $ref: ./paths/auth/signin/index.yml
-  /auth/signout:
-    $ref: ./paths/auth/signout/index.yml
+  # /auth/signout:
+  #   $ref: ./paths/auth/signout/index.yml
 #  /auth/signup:
 #    $ref: ./paths/auth/signup/index.yml
 
   # ユーザ
   '/users':
     $ref: ./paths/users/index.yml
-  '/users/{userId}':
-    $ref: ./paths/users/userId/index.yml
+  # '/users/{userId}':
+  #   $ref: ./paths/users/userId/index.yml
   '/users/{userId}/email':
     $ref: ./paths/users/userId/email/index.yml
   '/users/{userId}/password':
     $ref: ./paths/users/userId/password/index.yml
   '/users/{userId}/withdrawal':
     $ref: ./paths/users/userId/withdrawal/index.yml
-  '/users/{email}/password/reissue':
-    $ref: ./paths/users/email/password/reissue/index.yml
-  '/users/{emailReissueToken}/password/reissue':
+  # '/users/email/{email}/password/reissue':
+  #   $ref: ./paths/users/email/password/reissue/index.yml
+  '/users/emailReissueToken/{emailReissueToken}/password/reissue':
     $ref: ./paths/users/emailReissueToken/password/reissue/index.yml
 
   # 住所
