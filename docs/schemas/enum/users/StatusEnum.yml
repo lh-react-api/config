@@ -4,4 +4,4 @@ description: ステータス
 enum:
   - GOOGLE
   - AMAZON
-example: WITHDRAWAL
+example: GOOGLE

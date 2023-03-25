@@ -31,7 +31,7 @@ paths:
     $ref: ./paths/users/userId/withdrawal/index.yml
   '/users/{email}/password/reissue':
     $ref: ./paths/users/email/password/reissue/index.yml
-  '/users/{email_reissue_token}/password/reissue':
+  '/users/{emailReissueToken}/password/reissue':
     $ref: ./paths/users/emailReissueToken/password/reissue/index.yml
 
   # 住所

@@ -5,12 +5,13 @@ get:
   description: 対象のユーザにトークンURL付きのメールを送信する。（ローカルの場合はmailhogで確認して）
   parameters:
     - in: path
-      name: email_reissue_token
+      name: emailReissueToken
       description: メール再発行トークン
+      required: true
       schema:
         type: string
         description: メール再発行トークン
-        example: XXXXXXXXXXXXXXX
+        example: 'XXXXXXXXXXXXXXX'
   requestBody:
     description: リクエスト
     required: true
