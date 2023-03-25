@@ -1,4 +1,4 @@
-title: Credit
+title: CreditDetail
 type: object
 properties:
   company:

@@ -1,3 +1,4 @@
+title: Pagination
 type: object
 properties:
   current_page:
