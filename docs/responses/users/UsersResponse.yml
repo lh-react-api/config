@@ -6,6 +6,6 @@ allOf:
       data:
         type: array
         items:
-          $ref: ./UserResponse.yml
+          $ref: ../../schemas/models/User.yml
 required:
   - data

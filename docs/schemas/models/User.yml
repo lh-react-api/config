@@ -17,13 +17,13 @@ properties:
     example: "2023-03-14 19:39:38"
   social:
     nullable: true
-    $ref: ../enum/users/SocialEnum.yml
+    $ref: ../enum/users/UserSocialEnum.yml
   isAdmin:
     type: boolean
     description: 管理者フラグ
     example: false
   status:
-    $ref: ../enum/users/StatusEnum.yml
+    $ref: ../enum/users/UserStatusEnum.yml
   statusLabel:
     type: string
     description: ステータスのラベル

@@ -21,19 +21,18 @@ paths:
   # ユーザ
   '/users':
     $ref: ./paths/users/index.yml
-  # '/users/{userId}':
-  #   $ref: ./paths/users/userId/index.yml
+  '/users/{userId}':
+    $ref: ./paths/users/userId/index.yml
   '/users/{userId}/email':
     $ref: ./paths/users/userId/email/index.yml
   '/users/{userId}/password':
     $ref: ./paths/users/userId/password/index.yml
-  '/users/{userId}/withdrawal':
-    $ref: ./paths/users/userId/withdrawal/index.yml
-  # '/users/email/{email}/password/reissue':
-  #   $ref: ./paths/users/email/password/reissue/index.yml
   '/users/emailReissueToken/{emailReissueToken}/password/reissue':
     $ref: ./paths/users/emailReissueToken/password/reissue/index.yml
-
+  '/users/email/{email}/password/reissue':
+    $ref: ./paths/users/email/email/password/reissue/index.yml
+  '/users/{userId}/withdrawal':
+    $ref: ./paths/users/userId/withdrawal/index.yml
   # 住所
   '/addresses':
     $ref: ./paths/addresses/index.yml
@@ -51,8 +50,6 @@ components:
       $ref: ./schemas/models/CreditDetail.yml
     AuthSignupResponse:
       $ref: ./responses/auth/AuthSignupResponse.yml
-    UserResponse:
-      $ref: ./responses/users/UserResponse.yml
     UserShowResponse:
       $ref: ./responses/users/UserShowResponse.yml
     UsersResponse:

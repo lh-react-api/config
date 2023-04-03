@@ -1,4 +1,4 @@
-title: StatusEnum
+title: UserStatusEnum
 type: string
 description: ステータス
 enum:

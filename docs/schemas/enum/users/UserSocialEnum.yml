@@ -1,4 +1,4 @@
-title: SocialEnum
+title: UserSocialEnum
 type: string
 description: ソーシャル認証
 enum:

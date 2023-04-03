@@ -18,4 +18,4 @@ patch:
       content:
         application/json:
           schema:
-            $ref: ../../../../responses/users/UserResponse.yml
+            $ref: ../../../../schemas/models/User.yml

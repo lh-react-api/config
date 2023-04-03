@@ -16,4 +16,4 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../../responses/addresses/AddressResponse.yml
+            $ref: ../../schemas/models/Address.yml

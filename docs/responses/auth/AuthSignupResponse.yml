@@ -5,3 +5,5 @@ allOf:
         type: string
         description: トークン
         example: "1x|xxxxxxxxxxxxxxxxxx"
+required:
+  - token
