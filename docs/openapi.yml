@@ -13,8 +13,8 @@ paths:
   # 認証
   /auth/signin:
     $ref: ./paths/auth/signin/index.yml
-  # /auth/signout:
-  #   $ref: ./paths/auth/signout/index.yml
+  /auth/signout:
+    $ref: ./paths/auth/signout/index.yml
 #  /auth/signup:
 #    $ref: ./paths/auth/signup/index.yml
 
