@@ -27,10 +27,10 @@ paths:
     $ref: ./paths/users/userId/email/index.yml
   '/users/{userId}/password':
     $ref: ./paths/users/userId/password/index.yml
-  '/users/emailReissueToken/{emailReissueToken}/password/reissue':
+  '/users/{emailReissueToken}/password/reissue':
     $ref: ./paths/users/emailReissueToken/password/reissue/index.yml
-  '/users/email/{email}/password/reissue':
-    $ref: ./paths/users/email/email/password/reissue/index.yml
+  '/users/{email}/password/reissue':
+    $ref: ./paths/users/email/password/reissue/index.yml
   '/users/{userId}/withdrawal':
     $ref: ./paths/users/userId/withdrawal/index.yml
   # 住所
