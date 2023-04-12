@@ -4,12 +4,57 @@ properties:
   id:
     type: string
     description: id
-  name:
+    example: '1'
+  email:
     type: string
-    description: 名前
-  age:
+    description: メールアドレス
+    maxLength: 255
+    example: "ishikawa@sg.sandbox"
+  emailVerifiedAt:
     type: string
-    description: 歳
+    nullable: true
+    description: Laravelのメール認証日時
+    example: "2023-03-14 19:39:38"
+  social:
+    nullable: true
+    $ref: ../enum/users/UserSocialEnum.yml
+  isAdmin:
+    type: boolean
+    description: 管理者フラグ
+    example: false
+  status:
+    $ref: ../enum/users/UserStatusEnum.yml
+  statusLabel:
+    type: string
+    description: ステータスのラベル
+    example: '退会'
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
 required:
   - id
-  - name
+  - email
+  - emailVerifiedAt
+  - social
+  - isAdmin
+  - status
+  - statusLabel
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy

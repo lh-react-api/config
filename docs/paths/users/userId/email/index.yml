@@ -1,0 +1,21 @@
+patch:
+  tags:
+    - users
+  summary: ユーザメールアドレス情報更新
+  description: ユーザメールアドレス情報更新
+  parameters:
+    - $ref: ../../../../params/UserId.yml
+  requestBody:
+    description: リクエスト
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../../../requests/users/UpdateUserEmailRequest.yml
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../../schemas/models/User.yml

@@ -1,0 +1,19 @@
+get:
+  tags:
+    - auth
+  summary: ログイン
+  description: ログインを行います。csrfのトークンを取得してから実行してください。
+  requestBody:
+    description: リクエスト
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../../requests/auth/AuthSignupRequest.yml
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../responses/auth/AuthSignupResponse.yml

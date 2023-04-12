@@ -1,0 +1,10 @@
+title: UpdateAddressIsDefaultRequest
+type: object
+properties:
+  addressId:
+    type: integer
+    description: 住所ID
+    example: 1
+
+required:
+  - addressId

@@ -120,30 +120,29 @@ services:
     volumes:
       - ./docs:/usr/share/nginx/html/docs
     environment:
-      - URL=./docs/openapi.yaml
+      - URL=./docs/openapi.yml
 
   sg_swagger-merger:
     container_name: sg_swagger-merger
     build:
       dockerfile: ./swagger-merger/Dockerfile
     command: >
-      watch 'swagger-merger -i /docs/src/index.yaml -o /docs/openapi.yaml' /docs/src/
+      watch 'swagger-merger -i /docs/src/index.yml -o /docs/openapi.yml' /docs/src/
     volumes:
       - ./docs:/docs
 
 
-#  openapi-generator-server:
-#    image: openapitools/openapi-generator-cli
+  openapi-generator-server:
+    image: openapitools/openapi-generator-cli
+    volumes:
+      - ./docs/:/docs
+    # https://openapi-generator.tech/docs/generators/
+    # https://openapi-generator.tech/docs/generators/php-laravel
+    command: generate -g typescript-angular --additional-properties=aspnetCoreVersion=3.1 -i docs/openapi.yml -o docs/server
+
+#  sg_swagger_openapi2aspida:
+#    container_name: sg_swagger_openapi2aspida
+#    build: ./openapi2aspida
 #    volumes:
-#      - ./docs/:/docs
-#    # https://openapi-generator.tech/docs/generators/
-#    # https://openapi-generator.tech/docs/generators/php-laravel
-#    command: generate -g typescript --additional-properties=aspnetCoreVersion=3.1 -i docs/openapi.yaml -o docs/server
-#//    "start": "node index.js",
-
-  sg_swagger_openapi2aspida:
-    container_name: sg_swagger_openapi2aspida
-    build: ./openapi2aspida
-    volumes:
-      - ./openapi2aspida/:/openapi2aspida
-      - ./docs:/docs
+#      - ./openapi2aspida/:/openapi2aspida
+#      - ./docs:/docs

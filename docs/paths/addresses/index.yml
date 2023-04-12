@@ -1,0 +1,19 @@
+post:
+  tags:
+    - addresses
+  summary: 住所作成
+  description: 住所の作成
+  requestBody:
+    description: リクエスト
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../requests/addresses/CreateAddressRequest.yml
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../schemas/models/Address.yml
