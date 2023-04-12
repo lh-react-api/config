@@ -1,8 +1,8 @@
-get:
+patch:
   tags:
     - users
-  summary: パスワード再設定依頼
-  description: 対象のユーザにトークンURL付きのメールを送信する。（ローカルの場合はmailhogで確認して）
+  summary: パスワード再設定
+  description: パスワード再設定
   parameters:
     - in: path
       name: emailReissueToken
