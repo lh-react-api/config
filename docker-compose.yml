@@ -136,10 +136,10 @@ services:
     image: openapitools/openapi-generator-cli
     volumes:
       - ./docs/:/docs
+      - ./generated/:/generated
     # https://openapi-generator.tech/docs/generators/
     # https://openapi-generator.tech/docs/generators/php-laravel
-    command: generate -g typescript-angular --additional-properties=aspnetCoreVersion=3.1 -i docs/openapi.yml -o docs/server
-
+    command: ./docs/script.sh
 #  sg_swagger_openapi2aspida:
 #    container_name: sg_swagger_openapi2aspida
 #    build: ./openapi2aspida
