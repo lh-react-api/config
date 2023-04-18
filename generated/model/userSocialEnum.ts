@@ -17,7 +17,7 @@
 export type UserSocialEnum = 'GOOGLE' | 'AMAZON';
 
 export const UserSocialEnum = {
-    Google: 'GOOGLE' as UserSocialEnum,
-    Amazon: 'AMAZON' as UserSocialEnum
+    GOOGLE: 'GOOGLE' as UserSocialEnum,
+    AMAZON: 'AMAZON' as UserSocialEnum
 };
 

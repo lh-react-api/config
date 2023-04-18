@@ -17,7 +17,7 @@
 export type UserStatusEnum = 'GOOGLE' | 'AMAZON';
 
 export const UserStatusEnum = {
-    Google: 'GOOGLE' as UserStatusEnum,
-    Amazon: 'AMAZON' as UserStatusEnum
+    GOOGLE: 'GOOGLE' as UserStatusEnum,
+    AMAZON: 'AMAZON' as UserStatusEnum
 };
 
