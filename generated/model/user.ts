@@ -26,12 +26,12 @@ export interface User {
      * Laravelのメール認証日時
      */
     emailVerifiedAt: string | null;
-    social: UserSocialEnum;
+    social?: UserSocialEnum;
     /**
      * 管理者フラグ
      */
     isAdmin: boolean;
-    status: UserStatusEnum;
+    status?: UserStatusEnum;
     /**
      * ステータスのラベル
      */

@@ -16,7 +16,6 @@ properties:
     description: Laravelのメール認証日時
     example: "2023-03-14 19:39:38"
   social:
-    nullable: true
     $ref: ../enum/users/UserSocialEnum.yml
   isAdmin:
     type: boolean
@@ -50,9 +49,7 @@ required:
   - id
   - email
   - emailVerifiedAt
-  - social
   - isAdmin
-  - status
   - statusLabel
   - createdAt
   - updatedAt
