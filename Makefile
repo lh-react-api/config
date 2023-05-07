@@ -5,7 +5,7 @@ init:
 	docker-compose build && \
 	docker-compose up -d && \
 	docker-compose exec sg_server bash -c "systemctl start nginx && systemctl enable nginx" && \
-	docker-compose exec sg_php bash -c "composer install && cp .env.local .env && php artisan migrate --seed"
+	docker-compose exec sg_php bash -c "composer install && cp .env.local .env && php artisan migrate:fresh --seed"
 
 start:
 	docker-compose start  && \
