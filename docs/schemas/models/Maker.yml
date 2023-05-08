@@ -32,7 +32,6 @@ properties:
   updatedBy:
     type: integer
     description: 更新者
-    example: 1更新者
     example: 1
 required:
   - id
