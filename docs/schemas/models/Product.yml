@@ -1,0 +1,71 @@
+title: ProductOrigin
+type: object
+properties:
+  id:
+    type: integer
+    description: 商品ID
+    example: 1
+  userId:
+    type: integer
+    description: ユーザーID
+    example: 1
+  productOriginId:
+    type: integer
+    description: 商品原本ID
+    example: 1
+  productTypeId:
+    type: integer
+    description: 商品種別ID
+    example: 1
+  productRankId:
+    type: integer
+    description: 商品ランクID
+    example: 1
+  name:
+    type: string
+    description: 商品名
+    maxLength: 255
+    example: "PS5"
+  price:
+    type: integer
+    description: 月額料金
+    example: 10000
+  stripePlanId:
+    type: string
+    description: stripeプランID
+    maxLength: 256
+    example: "XXXYYYZZZ999"
+  status:
+    ref: ../enum/products/ProductStatusEnum.yml
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
+required:
+  - id
+  - userId
+  - productOriginId
+  - productTypeId
+  - productRankId
+  - name
+  - price
+  - stripePlanId
+  - status
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy

@@ -1,0 +1,60 @@
+title: Genre
+type: object
+properties:
+  id:
+    type: integer
+    description: ジャンルID
+    example: 1
+  name:
+    type: string
+    description: ジャンル名
+    maxLength: 255
+    example: 1
+  upperId:
+    type: integer
+    nullable: true
+    description: 上位階層ジャンルID
+    example: 1
+  level:
+    type: integer
+    description: 階層レベル
+    example: 1
+  information:
+    type: string
+    nullable: true
+    description: ジャンル情報
+    example: "電子機器全般"
+  image:
+    type: string
+    nullable: true
+    description: ジャンルサムネイル画像
+    example: "https://smartGarage/images"
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
+required:
+  - id
+  - name
+  - upperId
+  - level
+  - information
+  - image
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy

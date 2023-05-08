@@ -1,0 +1,47 @@
+title: ProductImage
+type: object
+properties:
+  id:
+    type: integer
+    description: 商品画像ID
+    example: 1
+  productId:
+    type: integer
+    description: 商品ID
+    example: 1
+  image:
+    type: string
+    description: 商品画像
+    maxLength: 512
+    example: "https://smartGarage/images"
+  order:
+    type: integer
+    description: 表示順序
+    example: 1
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
+required:
+  - id
+  - productId
+  - image
+  - order
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy

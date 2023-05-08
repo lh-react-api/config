@@ -1,0 +1,53 @@
+title: ProductRank
+type: object
+properties:
+  id:
+    type: integer
+    description: 商品ランクID
+    example: 1
+  rank:
+    type: string
+    description: 商品ランク名
+    maxLength: 128
+    example: "S"
+  information:
+    type: string
+    nullable: true
+    description: 商品ランク情報
+    example: "新品"
+  discountRate:
+    type: float
+    description: 割引率
+    example: 0.25
+  priority:
+    type: integer
+    description: 商品選択時に初回選択状態にする優先度（数値が大きいほど優先度高）
+    example: 999
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
+required:
+  - id
+  - rank
+  - information
+  - discountRate
+  - priority
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy
