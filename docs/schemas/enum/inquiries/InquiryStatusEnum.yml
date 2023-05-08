@@ -1,0 +1,14 @@
+title: InquiryStatusEnum
+type: string
+description: "状態¥n\
+              YET:未対応¥n\
+              DOING:対応中¥n\
+              COMPLETED:対応済み¥n\
+              UNNECESSARY:対応不要\
+              "
+enum:
+  - YET
+  - DOING
+  - COMPLETED
+  - UNNECESSARY
+example: YET

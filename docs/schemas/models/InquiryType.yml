@@ -1,0 +1,37 @@
+title: InquiryType
+type: object
+properties:
+  id:
+    type: integer
+    description: お問い合わせ種別ID
+    example: 1
+  text:
+    type: string
+    description: お問い合わせ種別名
+    maxLength: 128
+    example: "商品に関するお問い合わせ"
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
+required:
+  - id
+  - text
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy
