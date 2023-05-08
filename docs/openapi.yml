@@ -48,6 +48,40 @@ components:
       $ref: ./schemas/models/Credit.yml
     CreditDetail:
       $ref: ./schemas/models/CreditDetail.yml
+    AdminAuthority:
+      $ref: ./schemas/models/AdminAuthority.yml
+    Deliver:
+      $ref: ./schemas/models/Deliver.yml
+    DeliverTime:
+      $ref: ./schemas/models/DeliverTime.yml
+    Demand:
+      $ref: ./schemas/models/Demand.yml
+    Genre:
+      $ref: ./schemas/models/Genre.yml
+    Inquiry:
+      $ref: ./schemas/models/Inquiry.yml
+    InquiryType:
+      $ref: ./schemas/models/InquiryType.yml
+    Maker:
+      $ref: ./schemas/models/Maker.yml
+    Notice:
+      $ref: ./schemas/models/Notice.yml
+    Order:
+      $ref: ./schemas/models/Order.yml
+    Product:
+      $ref: ./schemas/models/Product.yml
+    ProductImage:
+      $ref: ./schemas/models/ProductImage.yml
+    ProductOrigin:
+      $ref: ./schemas/models/ProductOrigin.yml
+    ProductRank:
+      $ref: ./schemas/models/ProductRank.yml
+    ProductReview:
+      $ref: ./schemas/models/ProductReview.yml
+    ProductType:
+      $ref: ./schemas/models/ProductType.yml
+    Role:
+      $ref: ./schemas/models/Role.yml
     AuthSignupResponse:
       $ref: ./responses/auth/AuthSignupResponse.yml
     UserShowResponse:
