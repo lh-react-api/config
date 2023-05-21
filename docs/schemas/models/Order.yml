@@ -14,7 +14,7 @@ properties:
     description: ユーザーID
     example: 1
   progress:
-    ref: ../enum/orders/OrderProgressEnum.yml
+    $ref: ../enum/orders/OrderProgressEnum.yml
   sentTrackingNumber:
     type: string
     description: 発送追跡番号

@@ -6,7 +6,7 @@ properties:
     description: お知らせID
     example: 1
   division:
-    ref: ../enum/inquiries/NoticeDivisionEnum.yml
+    $ref: ../enum/notices/NoticeDivisionEnum.yml
   title:
     type: string
     description: タイトル

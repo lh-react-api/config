@@ -48,7 +48,7 @@ properties:
   thumbnail:
     type: string
     nullable: true
-    maxlength: 512
+    maxLength: 512
     description: 商品サムネイル画像
     example: "https://smartGarage/images"
   createdAt:

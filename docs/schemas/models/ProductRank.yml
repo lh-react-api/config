@@ -16,7 +16,7 @@ properties:
     description: 商品ランク情報
     example: "新品"
   discountRate:
-    type: float
+    type: number
     description: 割引率
     example: 0.25
   priority:

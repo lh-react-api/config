@@ -16,7 +16,7 @@ properties:
   action:
     type: integer
     description: アクション(２進数で左からCRUDにする。0101みたいに)
-    example: "1111"
+    example: 1111
   createdAt:
     type: string
     format: date-time
