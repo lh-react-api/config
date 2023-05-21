@@ -36,7 +36,7 @@ properties:
     maxLength: 256
     example: "XXXYYYZZZ999"
   status:
-    ref: ../enum/products/ProductStatusEnum.yml
+    $ref: ../enum/products/ProductStatusEnum.yml
   createdAt:
     type: string
     format: date-time

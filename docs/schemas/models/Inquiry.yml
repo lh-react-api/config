@@ -19,7 +19,7 @@ properties:
     description: お問い合わせ内容
     example: "商品の初期不良の件について"
   status:
-    ref: ../enum/inquiries/InquiryStatusEnum.yml
+    $ref: ../enum/inquiries/InquiryStatusEnum.yml
   createdAt:
     type: string
     format: date-time

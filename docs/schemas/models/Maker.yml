@@ -9,7 +9,7 @@ properties:
     type: string
     description: メーカー名
     maxLength: 255
-    example: 1
+    example: '1'
   information:
     type: string
     nullable: true
