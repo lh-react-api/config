@@ -1,0 +1,4 @@
+title: NoticeResponse
+type: object
+allOf:
+  - $ref: ../../../schemas/models/Notice.yml

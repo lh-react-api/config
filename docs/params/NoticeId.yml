@@ -1,0 +1,8 @@
+in: path
+name: noticeId
+description: お知らせ情報ID
+required: true
+schema:
+  type: integer
+  description: お知らせ情報ID
+  example: 1

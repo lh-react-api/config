@@ -69,6 +69,11 @@ paths:
     $ref: ./paths/admin/productRanks/index.yml
   '/admin/productRanks/{productRankId}':
     $ref: ./paths/admin/productRanks/productRankId/index.yml
+  # お知らせ
+  '/admin/notices':
+    $ref: ./paths/admin/notices/index.yml
+  '/admin/notices/{noticeId}':
+    $ref: ./paths/admin/notices/noticeId/index.yml
 
 components:
   schemas:
