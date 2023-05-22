@@ -12,7 +12,7 @@
 
 
 /**
- * 状態¥nYET:未対応¥nDOING:対応中¥nCOMPLETED:対応済み¥nUNNECESSARY:対応不要
+ * 状態<br> YET:未対応<br> DOING:対応中<br> COMPLETED:対応済み<br> UNNECESSARY:対応不要
  */
 export type InquiryStatusEnum = 'YET' | 'DOING' | 'COMPLETED' | 'UNNECESSARY';
 

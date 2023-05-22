@@ -12,7 +12,7 @@
 
 
 /**
- * 区分¥nIMPORTANT:重要¥nNOTICE:お知らせ¥n
+ * 区分<br> IMPORTANT:重要<br> NOTICE:お知らせ<br>
  */
 export type NoticeDivisionEnum = 'IMPORTANT' | 'NOTICE';
 

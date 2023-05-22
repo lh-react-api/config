@@ -12,7 +12,7 @@
 
 
 /**
- * 進捗¥nYET:未処理¥nSENT:発送済み¥nRENTARING:レンタル中¥nRETURN:返送済み¥nRECEIPT:受け取り済み¥nCLOSE:終了
+ * 進捗<br> YET:未処理<br> SENT:発送済み<br> RENTARING:レンタル中<br> RETURN:返送済み<br> RECEIPT:受け取り済み<br> CLOSE:終了
  */
 export type OrderProgressEnum = 'YET' | 'SENT' | 'RENTARING' | 'RETURN' | 'RECEIPT' | 'CLOSE';
 

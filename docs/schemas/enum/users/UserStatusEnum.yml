@@ -1,7 +1,12 @@
 title: UserStatusEnum
 type: string
-description: ステータス
+description:
+  ステータス<br>
+  ACTIVE:アクティブ<br>
+  WITHDRAWAL:退会済み<br>
+  ACTIVE:利用停止
 enum:
-  - GOOGLE
-  - AMAZON
-example: GOOGLE
+  - ACTIVE
+  - WITHDRAWAL
+  - SUSPEND
+example: ACTIVE

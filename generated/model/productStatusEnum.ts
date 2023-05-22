@@ -12,7 +12,7 @@
 
 
 /**
- * 進捗¥nIN_STOCK:在庫あり¥nON_LEASE:レンタル中¥nBLOKEN:破損
+ * 進捗<br> IN_STOCK:在庫あり<br> ON_LEASE:レンタル中<br> BLOKEN:破損
  */
 export type ProductStatusEnum = 'IN_STOCK' | 'ON_LEASE' | 'BLOKEN';
 
