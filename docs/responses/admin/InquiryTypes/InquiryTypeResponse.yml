@@ -1,0 +1,4 @@
+title: InquiryTypeResponse
+type: object
+allOf:
+  - $ref: ../../../schemas/models/InquiryType.yml
