@@ -79,6 +79,12 @@ paths:
     $ref: ./paths/admin/inquiryTypes/index.yml
   '/admin/inquiryTypes/{inquiryTypeId}':
     $ref: ./paths/admin/inquiryTypes/inquiryTypeId/index.yml
+  # お問い合わせ
+  '/admin/inquiries':
+    $ref: ./paths/admin/inquiries/index.yml
+  '/admin/inquiries/{inquiryId}':
+    $ref: ./paths/admin/inquiries/inquiryId/index.yml
+
 
 components:
   schemas:
