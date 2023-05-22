@@ -64,6 +64,11 @@ paths:
     $ref: ./paths/admin/makers/index.yml
   '/admin/makers/{makerId}':
     $ref: ./paths/admin/makers/makerId/index.yml
+  # 商品ランク情報
+  '/admin/productRanks':
+    $ref: ./paths/admin/productRanks/index.yml
+  '/admin/productRanks/{productRankId}':
+    $ref: ./paths/admin/productRanks/productRankId/index.yml
 
 components:
   schemas:
