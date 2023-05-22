@@ -38,6 +38,13 @@ paths:
     $ref: ./paths/addresses/index.yml
   '/users/{userId}/addresses/isDefault':
     $ref: ./paths/users/userId/addresses/isDefault/index.yml
+  # 管理API群
+  # 管理権限
+  '/admin/adminAuthorities':
+    $ref: ./paths/admin/adminAuthorities/index.yml
+  '/admin/adminAuthorities/{adminAuthorityId}':
+    $ref: ./paths/admin/adminAuthorities/adminAuthorityId/index.yml
+
 components:
   schemas:
     User:
