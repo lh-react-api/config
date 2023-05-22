@@ -59,6 +59,11 @@ paths:
     $ref: ./paths/admin/delivers/index.yml
   '/admin/delivers/{deliverId}':
     $ref: ./paths/admin/delivers/deliverId/index.yml
+  # メーカー情報
+  '/admin/makers':
+    $ref: ./paths/admin/makers/index.yml
+  '/admin/makers/{makerId}':
+    $ref: ./paths/admin/makers/makerId/index.yml
 
 components:
   schemas:

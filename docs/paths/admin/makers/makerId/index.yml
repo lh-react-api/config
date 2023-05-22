@@ -1,0 +1,25 @@
+get:
+  tags:
+    - makers
+  summary: メーカー情報詳細
+  description: メーカー情報の詳細取得
+  parameters:
+    - $ref: '../../../../params/MakerId.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../responses/admin/makers/MakerResponse.yml'
+delete:
+  tags:
+    - makers
+  summary: メーカー情報削除
+  description: メーカー情報の削除
+  parameters:
+    - $ref: '../../../../params/MakerId.yml'
+  responses:
+    '200':
+      description: '200'
+      content: null

@@ -13,6 +13,10 @@
 
 export interface DeliverRequest { 
     /**
+     * 注文ID
+     */
+    orderId: number;
+    /**
      * 配達時間ID
      */
     deliverTimeId: number;
