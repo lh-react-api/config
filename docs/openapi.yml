@@ -44,6 +44,11 @@ paths:
     $ref: ./paths/admin/adminAuthorities/index.yml
   '/admin/adminAuthorities/{adminAuthorityId}':
     $ref: ./paths/admin/adminAuthorities/adminAuthorityId/index.yml
+  # 管理権限マスタ
+  '/admin/roles':
+    $ref: ./paths/admin/roles/index.yml
+  '/admin/roles/{roleId}':
+    $ref: ./paths/admin/roles/roleId/index.yml
 
 components:
   schemas:
