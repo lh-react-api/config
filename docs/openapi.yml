@@ -54,6 +54,11 @@ paths:
     $ref: ./paths/admin/deliverTimes/index.yml
   '/admin/deliverTimes/{deliverTimeId}':
     $ref: ./paths/admin/deliverTimes/deliverTimeId/index.yml
+  # 配達情報
+  '/admin/delivers':
+    $ref: ./paths/admin/delivers/index.yml
+  '/admin/delivers/{deliverId}':
+    $ref: ./paths/admin/delivers/deliverId/index.yml
 
 components:
   schemas:
