@@ -49,6 +49,11 @@ paths:
     $ref: ./paths/admin/roles/index.yml
   '/admin/roles/{roleId}':
     $ref: ./paths/admin/roles/roleId/index.yml
+  # 配達時間マスタ
+  '/admin/deliverTimes':
+    $ref: ./paths/admin/deliverTimes/index.yml
+  '/admin/deliverTimes/{deliverTimeId}':
+    $ref: ./paths/admin/deliverTimes/deliverTimeId/index.yml
 
 components:
   schemas:

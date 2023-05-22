@@ -1,0 +1,50 @@
+get:
+  tags:
+    - deliverTimes
+  summary: 配達時間マスタ情報一覧
+  description: 配達時間マスタ情報の一覧取得
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/deliverTimes/DeliverTimesResponse.yml'
+post:
+  tags:
+    - deliverTimes
+  summary: 配達時間マスタ情報登録
+  description: 配達時間マスタ情報の登録
+  requestBody:
+    description: 登録する配達時間マスタ情報
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/deliverTimes/DeliverTimeRequest.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/deliverTimes/DeliverTimeResponse.yml'
+put:
+  tags:
+    - deliverTimes
+  summary: 配達時間マスタ情報更新
+  description: 配達時間マスタ情報の更新
+  requestBody:
+    description: 更新する配達時間マスタ情報
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/deliverTimes/DeliverTimeRequest.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/deliverTimes/DeliverTimeResponse.yml'
