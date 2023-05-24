@@ -9,35 +9,18 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { NoticeDivisionEnum } from './noticeDivisionEnum';
+import { Product } from './product';
 
 
-export interface Notice { 
+export interface RecommendProductsResponseAllOfDataInner { 
     /**
-     * お知らせID
+     * 住所ID
      */
     id: number;
-    division: NoticeDivisionEnum;
     /**
-     * NoticeDivisionのラベル
+     * 商品ID
      */
-    divisionLabel?: string;
-    /**
-     * タイトル
-     */
-    title: string;
-    /**
-     * お知らせ内容
-     */
-    text: string;
-    /**
-     * 公開日
-     */
-    noticeDate: string | null;
-    /**
-     * 終了日
-     */
-    closeDate: string | null;
+    productId: number;
     /**
      * 作成日
      */
@@ -54,8 +37,6 @@ export interface Notice {
      * 更新者
      */
     updatedBy: number;
+    product?: Product;
 }
-export namespace Notice {
-}
-
 
