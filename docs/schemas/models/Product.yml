@@ -1,4 +1,4 @@
-title: ProductOrigin
+title: Product
 type: object
 properties:
   id:
@@ -24,8 +24,7 @@ properties:
   name:
     type: string
     description: 商品名
-    maxLength: 255
-    example: "PS5"
+    example: 【完品】PS5 デジタルエディション
   price:
     type: integer
     description: 月額料金

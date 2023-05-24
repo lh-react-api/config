@@ -1,0 +1,16 @@
+title: AddressesResponse
+type: object
+allOf:
+  - $ref: ../../schemas/models/Pagination.yml
+  - properties:
+      data:
+        type: array
+        items:
+          allOf:
+            - properties:
+              $ref: ../../schemas/models/RecommendProduct.yml
+            - properties:
+                product:
+                  $ref: ../../schemas/models/Product.yml
+required:
+  - data
