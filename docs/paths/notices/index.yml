@@ -1,0 +1,19 @@
+get:
+  tags:
+    - notices
+  summary: お知らせ一覧
+  description: お知らせ一覧
+  requestBody:
+    description: リクエスト
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../requests/addresses/CreateAddressRequest.yml
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../responses/notices/NoticesResponse.yml

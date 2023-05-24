@@ -1,0 +1,11 @@
+title: AddressesResponse
+type: object
+allOf:
+  - $ref: ../../schemas/models/Pagination.yml
+  - properties:
+      data:
+        type: array
+        items:
+          $ref: ../../schemas/models/Notice.yml
+required:
+  - data
