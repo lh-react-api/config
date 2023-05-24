@@ -1,3 +1,4 @@
+title: Product
 type: object
 properties:
   id:
@@ -26,8 +27,8 @@ properties:
     example: 【完品】PS5 デジタルエディション
   price:
     type: integer
-    description: 商品ランクID
-    example: 60000
+    description: 月額料金
+    example: 10000
   stripePlanId:
     type: string
     description: stripeプランID
