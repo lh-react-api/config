@@ -41,6 +41,8 @@ paths:
   # お知らせ
   '/notices':
     $ref: ./paths/notices/index.yml
+  '/notices/{noticeId}':
+    $ref: ./paths/notices/noticeId/index.yml
   # おすすめ商品
   '/recommendProducts':
     $ref: ./paths/recommendProducts/index.yml
