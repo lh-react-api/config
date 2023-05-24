@@ -1,0 +1,14 @@
+get:
+  tags:
+    - notices
+  summary: お知らせ詳細
+  description: お知らせ詳細の取得する
+  parameters:
+    - $ref: ../../../params/NoticeId.yml
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../schemas/models/Notice.yml
