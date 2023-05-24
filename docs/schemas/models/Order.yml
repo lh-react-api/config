@@ -1,0 +1,56 @@
+title: Order
+type: object
+properties:
+  id:
+    type: integer
+    description: 注文情報ID
+    example: 1
+  productId:
+    type: integer
+    description: 商品ID
+    example: 1
+  userId:
+    type: integer
+    description: ユーザーID
+    example: 1
+  progress:
+    $ref: ../enum/orders/OrderProgressEnum.yml
+  sentTrackingNumber:
+    type: string
+    description: 発送追跡番号
+    maxLength: 128
+    example: "XXXXXXXXXXXXXXX"
+  returnTrackingNumber:
+    type: string
+    description: 返送追跡番号
+    maxLength: 128
+    example: "ZZZZZZZZZZZZZZZ"
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
+required:
+  - id
+  - productId
+  - userId
+  - progress
+  - sentTrackingNumber
+  - returnTrackingNumber
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy

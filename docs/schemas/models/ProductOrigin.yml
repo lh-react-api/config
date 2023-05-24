@@ -1,0 +1,86 @@
+title: ProductOrigin
+type: object
+properties:
+  id:
+    type: integer
+    description: 商品原本ID
+    example: 1
+  genreId:
+    type: integer
+    description: ジャンルID
+    example: 1
+  makerId:
+    type: integer
+    description: メーカーID
+    example: 1
+  name:
+    type: string
+    description: 商品名
+    maxLength: 255
+    example: "PS5"
+  information:
+    type: string
+    nullable: true
+    description: 商品情報
+    example: "次世代ゲーム機のPlayStation5です"
+  coutionText:
+    type: string
+    nullable: true
+    description: 商品情報
+    example: "精密機器のため取り扱いに注意してください"
+  size:
+    type: string
+    nullable: true
+    maxLength: 255
+    description: 商品サイズ
+    example: "20cm * 12cm * 15cm"
+  weight:
+    type: string
+    nullable: true
+    description: 商品重量
+    example: "5kg"
+  releaseDate:
+    type: string
+    format: date
+    nullable: true
+    description: 発売日
+    example: "2023-03-15"
+  thumbnail:
+    type: string
+    nullable: true
+    maxLength: 512
+    description: 商品サムネイル画像
+    example: "https://smartGarage/images"
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
+required:
+  - id
+  - genreId
+  - makerId
+  - name
+  - information
+  - coutionText
+  - size
+  - weight
+  - releaseDate
+  - thumbnail
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy

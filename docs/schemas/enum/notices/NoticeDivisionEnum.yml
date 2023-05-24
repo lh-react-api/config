@@ -1,0 +1,10 @@
+title: NoticeDivisionEnum
+type: string
+description: "区分¥n\
+              IMPORTANT:重要¥n\
+              NOTICE:お知らせ¥n\
+              "
+enum:
+  - IMPORTANT
+  - NOTICE
+example: IMPORTANT

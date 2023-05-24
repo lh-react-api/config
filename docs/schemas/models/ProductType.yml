@@ -1,0 +1,42 @@
+title: ProductType
+type: object
+properties:
+  id:
+    type: integer
+    description: 商品種別ID
+    example: 1
+  productOriginId:
+    type: integer
+    description: 商品原本ID
+    example: 1
+  name:
+    type: string
+    description: 種別名
+    maxLength: 255
+    example: "デジタルエディション"
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
+required:
+  - id
+  - productOriginId
+  - name
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy

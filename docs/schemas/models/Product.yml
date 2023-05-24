@@ -1,14 +1,12 @@
-title: Product
 type: object
-
 properties:
   id:
     type: integer
-    description: 住所ID
+    description: 商品ID
     example: 1
   userId:
     type: integer
-    description: ユーザID
+    description: ユーザーID
     example: 1
   productOriginId:
     type: integer
@@ -16,7 +14,11 @@ properties:
     example: 1
   productTypeId:
     type: integer
-    description: 商品タイプID
+    description: 商品種別ID
+    example: 1
+  productRankId:
+    type: integer
+    description: 商品ランクID
     example: 1
   name:
     type: string
@@ -27,13 +29,12 @@ properties:
     description: 商品ランクID
     example: 60000
   stripePlanId:
-    type: integer
-    description: 商品ランクID
-    example: XXXXXXXXXXX
+    type: string
+    description: stripeプランID
+    maxLength: 256
+    example: "XXXYYYZZZ999"
   status:
-    type: integer
-    description: ステータス
-    example: IN_STOCK
+    $ref: ../enum/products/ProductStatusEnum.yml
   createdAt:
     type: string
     format: date-time
@@ -57,6 +58,7 @@ required:
   - userId
   - productOriginId
   - productTypeId
+  - productRankId
   - name
   - price
   - stripePlanId
