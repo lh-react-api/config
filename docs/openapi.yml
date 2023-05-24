@@ -38,6 +38,9 @@ paths:
     $ref: ./paths/addresses/index.yml
   '/users/{userId}/addresses/isDefault':
     $ref: ./paths/users/userId/addresses/isDefault/index.yml
+  # おすすめ商品
+  '/recommendProducts':
+    $ref: ./paths/recommendProducts/index.yml
 components:
   schemas:
     User:
