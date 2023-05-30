@@ -9,16 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { Product } from './product';
 
 
-export interface AuthSignupRequest { 
-    /**
-     * メールアドレス
-     */
-    email: string;
-    /**
-     * パスワード
-     */
-    password: string;
+export interface RecommendProductsResponseAllOfDataInnerAllOf { 
+    product?: Product;
 }
 

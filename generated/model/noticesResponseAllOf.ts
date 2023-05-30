@@ -9,12 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { Notice } from './notice';
 
 
-export interface UpdateUserEmailRequest { 
-    /**
-     * メールアドレス
-     */
-    email: string;
+export interface NoticesResponseAllOf { 
+    data?: Array<Notice>;
 }
 

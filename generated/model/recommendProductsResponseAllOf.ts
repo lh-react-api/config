@@ -9,12 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { RecommendProductsResponseAllOfDataInner } from './recommendProductsResponseAllOfDataInner';
 
 
-export interface UpdateUserPasswordRequest { 
-    /**
-     * パスワード
-     */
-    password: string;
+export interface RecommendProductsResponseAllOf { 
+    data?: Array<RecommendProductsResponseAllOfDataInner>;
 }
 

@@ -9,12 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { MaskCard } from './maskCard';
 
 
-export interface UpdateAddressIsDefaultRequest { 
-    /**
-     * 住所ID
-     */
-    addressId: number;
+export interface MaskCardsResponse { 
+    data: Array<MaskCard>;
 }
 

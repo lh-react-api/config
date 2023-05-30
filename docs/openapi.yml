@@ -46,6 +46,9 @@ paths:
   # おすすめ商品
   '/recommendProducts':
     $ref: ./paths/recommendProducts/index.yml
+  # 登録済みクレジットカード情報
+  '/my/credits':
+    $ref: ./paths/my/credits/index.yml
 components:
   schemas:
     User:
@@ -90,6 +93,8 @@ components:
       $ref: ./schemas/models/ProductType.yml
     Role:
       $ref: ./schemas/models/Role.yml
+    MaskCard:
+      $ref: ./schemas/models/MaskCard.yml
     AuthSignupResponse:
       $ref: ./responses/auth/AuthSignupResponse.yml
     UserShowResponse:

@@ -1,0 +1,12 @@
+get:
+  tags:
+    - my
+  summary: 登録済みクレジットカードリスト取得
+  description: stripeに登録したクレジットカード情報をリストで返却する
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../responses/my/credits/MaskCardsResponse.yml
