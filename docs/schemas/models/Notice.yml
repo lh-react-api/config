@@ -7,6 +7,11 @@ properties:
     example: 1
   division:
     $ref: ../enum/notices/NoticeDivisionEnum.yml
+  divisionLabel:
+    type: string
+    description: NoticeDivisionのラベル
+    maxLength: 128
+    example: "重要"
   title:
     type: string
     description: タイトル

@@ -1,8 +1,8 @@
 in: path
 name: noticeId
-description: お知らせ情報ID
+description: お知らせID
 required: true
 schema:
   type: integer
-  description: お知らせ情報ID
+  description: お知らせID
   example: 1
