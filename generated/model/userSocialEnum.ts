@@ -12,7 +12,7 @@
 
 
 /**
- * ソーシャル認証
+ * ソーシャル認証<br> GOOGLE:Googleアカウント認証<br> AMAZON:AMAZONアカウント認証
  */
 export type UserSocialEnum = 'GOOGLE' | 'AMAZON';
 

@@ -1,0 +1,62 @@
+get:
+  tags:
+    - inquiryTypes
+  summary: お問い合わせ種別一覧
+  description: お問い合わせ種別の一覧取得
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/inquiryTypes/InquiryTypesResponse.yml'
+post:
+  tags:
+    - inquiryTypes
+  summary: お問い合わせ登録
+  description: お問い合わせ種別の登録
+  requestBody:
+    description: 登録するお問い合わせ種別
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/inquiryTypes/InquiryTypeRequest.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/inquiryTypes/InquiryTypeResponse.yml'
+put:
+  tags:
+    - inquiryTypes
+  summary: お問い合わせ種別更新
+  description: お問い合わせ種別の更新
+  requestBody:
+    description: 更新するお問い合わせ種別
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/inquiryTypes/InquiryTypeRequest.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/inquiryTypes/InquiryTypeResponse.yml'
+
+definitions:
+  bodyContent:
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/inquiryTypes/InquiryTypeRequest.yml'
+  responseContent:
+    content:
+      application/json:
+        schema:
+          $ref: '../../../responses/admin/inquiryTypes/InquiryTypeResponse.yml'

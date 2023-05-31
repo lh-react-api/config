@@ -1,0 +1,62 @@
+get:
+  tags:
+    - delivers
+  summary: 配達情報一覧
+  description: 配達情報の一覧取得
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/delivers/DeliversResponse.yml'
+post:
+  tags:
+    - delivers
+  summary: 配達情報登録
+  description: 配達情報の登録
+  requestBody:
+    description: 登録する配達情報
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/delivers/DeliverRequest.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/delivers/DeliverResponse.yml'
+put:
+  tags:
+    - delivers
+  summary: 配達情報更新
+  description: 配達情報の更新
+  requestBody:
+    description: 更新する配達情報
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/delivers/DeliverRequest.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/delivers/DeliverResponse.yml'
+
+definitions:
+  bodyContent:
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/delivers/DeliverRequest.yml'
+  responseContent:
+    content:
+      application/json:
+        schema:
+          $ref: '../../../responses/admin/delivers/DeliverResponse.yml'

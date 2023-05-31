@@ -1,0 +1,25 @@
+get:
+  tags:
+    - delivers
+  summary: 配達情報詳細
+  description: 配達情報の詳細取得
+  parameters:
+    - $ref: '../../../../params/DeliverId.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../responses/admin/delivers/DeliverResponse.yml'
+delete:
+  tags:
+    - delivers
+  summary: 配達情報削除
+  description: 配達情報の削除
+  parameters:
+    - $ref: '../../../../params/DeliverId.yml'
+  responses:
+    '200':
+      description: '200'
+      content: null

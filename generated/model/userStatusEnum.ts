@@ -12,12 +12,13 @@
 
 
 /**
- * ステータス
+ * ステータス<br> ACTIVE:アクティブ<br> WITHDRAWAL:退会済み<br> ACTIVE:利用停止
  */
-export type UserStatusEnum = 'GOOGLE' | 'AMAZON';
+export type UserStatusEnum = 'ACTIVE' | 'WITHDRAWAL' | 'SUSPEND';
 
 export const UserStatusEnum = {
-    GOOGLE: 'GOOGLE' as UserStatusEnum,
-    AMAZON: 'AMAZON' as UserStatusEnum
+    ACTIVE: 'ACTIVE' as UserStatusEnum,
+    WITHDRAWAL: 'WITHDRAWAL' as UserStatusEnum,
+    SUSPEND: 'SUSPEND' as UserStatusEnum
 };
 

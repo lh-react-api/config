@@ -1,0 +1,4 @@
+title: RoleResponse
+type: object
+allOf:
+  - $ref: '../../../schemas/models/Role.yml'

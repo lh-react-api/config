@@ -1,0 +1,4 @@
+title: DeliverTimeResponse
+type: object
+allOf:
+  - $ref: ../../../schemas/models/DeliverTime.yml

@@ -1,0 +1,4 @@
+title: MakerResponse
+type: object
+allOf:
+  - $ref: ../../../schemas/models/Maker.yml
