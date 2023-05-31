@@ -19,6 +19,10 @@ export interface NoticeResponse {
     id: number;
     division: NoticeDivisionEnum;
     /**
+     * NoticeDivisionのラベル
+     */
+    divisionLabel?: string;
+    /**
      * タイトル
      */
     title: string;
