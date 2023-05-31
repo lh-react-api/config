@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Address } from './address';
+import { RecommendProductsResponseAllOfDataInner } from './recommendProductsResponseAllOfDataInner';
 
 
-export interface AddressesResponse { 
+export interface RecommendProductsResponse { 
     /**
      * 現在のページ番号
      */
@@ -53,6 +53,6 @@ export interface AddressesResponse {
      * 検索ヒット数
      */
     total: number;
-    data: Array<Address>;
+    data: Array<RecommendProductsResponseAllOfDataInner>;
 }
 
