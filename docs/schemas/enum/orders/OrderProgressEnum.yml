@@ -1,13 +1,13 @@
 title: OrderProgressEnum
 type: string
-description: "進捗¥n\
-              YET:未処理¥n\
-              SENT:発送済み¥n\
-              RENTARING:レンタル中¥n\
-              RETURN:返送済み¥n\
-              RECEIPT:受け取り済み¥n\
-              CLOSE:終了\
-              "
+description:  
+  進捗<br>
+  YET:未処理<br>
+  SENT:発送済み<br>
+  RENTARING:レンタル中<br>
+  RETURN:返送済み<br>
+  RECEIPT:受け取り済み<br>
+  CLOSE:終了 
 enum:
   - YET
   - SENT

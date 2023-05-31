@@ -1,0 +1,25 @@
+get:
+  tags:
+    - inquiryTypes
+  summary: お問い合わせ種別詳細
+  description: お問い合わせ種別の詳細取得
+  parameters:
+    - $ref: '../../../../params/InquiryTypeId.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../responses/admin/inquiryTypes/InquiryTypeResponse.yml'
+delete:
+  tags:
+    - inquiryTypes
+  summary: お問い合わせ種別削除
+  description: お問い合わせ種別の削除
+  parameters:
+    - $ref: '../../../../params/InquiryTypeId.yml'
+  responses:
+    '200':
+      description: '200'
+      content: null

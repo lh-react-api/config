@@ -1,0 +1,25 @@
+get:
+  tags:
+    - productRanks
+  summary: 商品ランク詳細
+  description: 商品ランク情報の詳細取得
+  parameters:
+    - $ref: '../../../../params/ProductRankId.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../responses/admin/productRanks/ProductRankResponse.yml'
+delete:
+  tags:
+    - productRanks
+  summary: 商品ランク情報削除
+  description: 商品ランク情報の削除
+  parameters:
+    - $ref: '../../../../params/ProductRankId.yml'
+  responses:
+    '200':
+      description: '200'
+      content: null

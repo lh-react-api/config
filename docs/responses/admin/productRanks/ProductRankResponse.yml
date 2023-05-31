@@ -1,0 +1,4 @@
+title: ProductRanksResponse
+type: object
+allOf:
+  - $ref: ../../../schemas/models/ProductRank.yml

@@ -1,10 +1,10 @@
 title: ProductStatusEnum
 type: string
-description: "進捗¥n\
-              IN_STOCK:在庫あり¥n\
-              ON_LEASE:レンタル中¥n\
-              BLOKEN:破損\
-              "
+description:  
+  進捗<br>
+  IN_STOCK:在庫あり<br>
+  ON_LEASE:レンタル中<br>
+  BLOKEN:破損
 enum:
   - IN_STOCK
   - ON_LEASE

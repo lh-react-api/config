@@ -1,0 +1,25 @@
+get:
+  tags:
+    - inquiries
+  summary: お問い合わせ詳細
+  description: お問い合わせの詳細取得
+  parameters:
+    - $ref: '../../../../params/InquiryId.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../responses/admin/inquiries/InquiryResponse.yml'
+delete:
+  tags:
+    - inquiries
+  summary: お問い合わせ削除
+  description: お問い合わせの削除
+  parameters:
+    - $ref: '../../../../params/InquiryId.yml'
+  responses:
+    '200':
+      description: '200'
+      content: null

@@ -1,0 +1,25 @@
+get:
+  tags:
+    - adminAuthorities
+  summary: 管理者権限情報詳細
+  description: 管理者権限情報の詳細取得
+  parameters:
+    - $ref: '../../../../params/AdminAuthorityId.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../responses/admin/adminAuthorities/AdminAuthorityResponse.yml'
+delete:
+  tags:
+    - adminAuthorities
+  summary: 管理者権限情報削除
+  description: 管理者権限情報の削除
+  parameters:
+    - $ref: '../../../../params/AdminAuthorityId.yml'
+  responses:
+    '200':
+      description: '200'
+      content: null

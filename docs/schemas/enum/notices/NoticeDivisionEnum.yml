@@ -1,9 +1,9 @@
 title: NoticeDivisionEnum
 type: string
-description: "区分¥n\
-              IMPORTANT:重要¥n\
-              NOTICE:お知らせ¥n\
-              "
+description: 
+  区分<br>
+  IMPORTANT:重要<br>
+  NOTICE:お知らせ<br>
 enum:
   - IMPORTANT
   - NOTICE

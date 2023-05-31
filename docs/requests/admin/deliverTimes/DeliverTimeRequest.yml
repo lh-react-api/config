@@ -1,0 +1,19 @@
+title: DeliverTimeRequest
+type: object
+properties:
+  deliverTime:
+    type: string
+    description: '配達時間'
+    example: '8:00 ～ 12:00'
+  order:
+    type: integer
+    description: 表示順序
+    example: 1
+  deadline:
+    type: string
+    description: '受付締切時間'
+    example: '当日7:00まで受付'
+required:
+  - deliverTime
+  - order
+  - deadline

@@ -1,0 +1,16 @@
+title: MakerRequest
+type: object
+properties:
+  name:
+    type: string
+    description: メーカー名
+    maxLength: 255
+    example: '1'
+  information:
+    type: string
+    nullable: true
+    description: メーカー情報
+    example: "SONY"
+required:
+  - name
+  - information
