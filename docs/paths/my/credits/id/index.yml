@@ -1,0 +1,12 @@
+get:
+  tags:
+    - my
+  summary: stripe顧客ID取得
+  description: 自身のアカウントに紐づくstripe顧客IDを取得する
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../../responses/my/credits/StripeCustomerIdResponse.yml

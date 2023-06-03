@@ -70,6 +70,8 @@ export * from './roleRequest';
 export * from './roleResponse';
 export * from './rolesResponse';
 export * from './rolesResponseAllOf';
+export * from './stripeCustomerIdResponse';
+export * from './stripeCustomerIdResponseAllOf';
 export * from './stripeCvcCheckEnum';
 export * from './user';
 export * from './userShowResponse';
