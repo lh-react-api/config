@@ -49,6 +49,10 @@ paths:
   # 登録済みクレジットカード情報
   '/my/credits':
     $ref: ./paths/my/credits/index.yml
+  # stripe顧客ID取得
+  '/my/credits/id':
+    $ref: ./paths/my/credits/id/index.yml
+
 
   # 管理API群
   # 管理権限
