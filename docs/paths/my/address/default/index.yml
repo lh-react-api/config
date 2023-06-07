@@ -1,0 +1,12 @@
+get:
+  tags:
+    - my
+  summary: ユーザー情報取得
+  description: ログインユーザのユーザー情報を取得
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../../responses/my/addresses/AddressResponse.yml

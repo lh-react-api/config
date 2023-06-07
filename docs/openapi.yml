@@ -27,6 +27,10 @@ paths:
     $ref: ./paths/my/user/email/index.yml
   '/my/user/password':
     $ref: ./paths/my/user/password/index.yml
+  '/my/user/withdrawal':
+    $ref: ./paths/my/user/withdrawal/index.yml
+  '/my/address/default':
+    $ref: ./paths/my/address/default/index.yml
   '/my/orders':
     $ref: ./paths/my/orders/index.yml
 #  '/users/{userId}':
