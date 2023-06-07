@@ -1,0 +1,8 @@
+in: path
+name: AddressId
+description: 住所ID
+required: true
+schema:
+  type: integer
+  description: 住所ID
+  example: 1
