@@ -1,4 +1,4 @@
-get:
+post:
   tags:
     - auth
   summary: サインアップ（ユーザ登録）

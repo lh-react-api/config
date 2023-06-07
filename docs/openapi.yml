@@ -11,6 +11,8 @@ servers:
         default: http://localhost:3000
 paths:
   # 認証
+  /sanctum/csrf-cookie:
+    $ref: ./paths/sanctum/csrf-cookie/index.yml
   /auth/signin:
     $ref: ./paths/auth/signin/index.yml
   /auth/signout:
