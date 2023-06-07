@@ -1,17 +1,15 @@
 patch:
   tags:
-    - users
-  summary: ユーザパスワード情報更新
-  description: ユーザパスワード情報更新
-  parameters:
-    - $ref: ../../../../params/UserId.yml
+    - my
+  summary: ユーザメールアドレス情報更新
+  description: ユーザメールアドレス情報更新
   requestBody:
     description: リクエスト
     required: true
     content:
       application/json:
         schema:
-          $ref: ../../../../requests/users/UpdateUserPasswordRequest.yml
+          $ref: ../../../../requests/users/UpdateUserEmailRequest.yml
   responses:
     '200':
       description: '200'
