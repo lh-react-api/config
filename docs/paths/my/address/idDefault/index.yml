@@ -1,0 +1,19 @@
+patch:
+  tags:
+    - my
+  summary: デフォルト住所更新
+  description: デフォルト住所更新
+  requestBody:
+    description: リクエスト
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../../../requests/addresses/UpdateAddressIsDefaultRequest.yml
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../../responses/my/addresses/AddressesResponse.yml
