@@ -15,6 +15,10 @@ properties:
     example: 1
   progress:
     $ref: ../enum/orders/OrderProgressEnum.yml
+  progressLabel:
+    type: string
+    description: progressのラベル
+    example: "未処理"
   sentTrackingNumber:
     type: string
     description: 発送追跡番号

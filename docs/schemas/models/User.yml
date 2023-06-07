@@ -15,6 +15,11 @@ properties:
     nullable: true
     description: Laravelのメール認証日時
     example: "2023-03-14 19:39:38"
+  emailReissueToken:
+    type: string
+    nullable: true
+    description: パスワード再発行のトークン
+    example: "XXXXXXXXXX"
   social:
     $ref: ../enum/users/UserSocialEnum.yml
   isAdmin:

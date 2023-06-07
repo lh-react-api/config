@@ -77,6 +77,7 @@ export * from './stripeCustomerIdResponse';
 export * from './stripeCustomerIdResponseAllOf';
 export * from './stripeCvcCheckEnum';
 export * from './user';
+export * from './userResponse';
 export * from './userShowResponse';
 export * from './userShowResponseAllOf';
 export * from './userShowResponseAllOf1';

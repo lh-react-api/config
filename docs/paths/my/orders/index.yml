@@ -1,0 +1,12 @@
+get:
+  tags:
+    - my
+  summary: 注文情報取得
+  description: ログインユーザの注文情報を取得する
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../responses/my/orders/OrdersResponse.yml
