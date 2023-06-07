@@ -1,0 +1,8 @@
+in: path
+name: deliverId
+description: 配達情報ID
+required: true
+schema:
+  type: integer
+  description: 配達情報ID
+  example: 1

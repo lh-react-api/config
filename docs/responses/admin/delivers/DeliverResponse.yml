@@ -1,0 +1,4 @@
+title: DeliverResponse
+type: object
+allOf:
+  - $ref: ../../../schemas/models/Deliver.yml

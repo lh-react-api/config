@@ -1,0 +1,10 @@
+title: InquiryTypeRequest
+type: object
+properties:
+  text:
+    type: string
+    description: お問い合わせ種別名
+    maxLength: 128
+    example: "商品に関するお問い合わせ"
+required:
+  - text

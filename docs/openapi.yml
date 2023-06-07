@@ -48,6 +48,61 @@ paths:
   # おすすめ商品
   '/recommendProducts':
     $ref: ./paths/recommendProducts/index.yml
+  # 登録済みクレジットカード情報
+  '/my/credits':
+    $ref: ./paths/my/credits/index.yml
+  # stripe顧客ID取得
+  '/my/credits/id':
+    $ref: ./paths/my/credits/id/index.yml
+
+
+  # 管理API群
+  # 管理権限
+  '/admin/adminAuthorities':
+    $ref: ./paths/admin/adminAuthorities/index.yml
+  '/admin/adminAuthorities/{adminAuthorityId}':
+    $ref: ./paths/admin/adminAuthorities/adminAuthorityId/index.yml
+  # 管理権限マスタ
+  '/admin/roles':
+    $ref: ./paths/admin/roles/index.yml
+  '/admin/roles/{roleId}':
+    $ref: ./paths/admin/roles/roleId/index.yml
+  # 配達時間マスタ
+  '/admin/deliverTimes':
+    $ref: ./paths/admin/deliverTimes/index.yml
+  '/admin/deliverTimes/{deliverTimeId}':
+    $ref: ./paths/admin/deliverTimes/deliverTimeId/index.yml
+  # 配達情報
+  '/admin/delivers':
+    $ref: ./paths/admin/delivers/index.yml
+  '/admin/delivers/{deliverId}':
+    $ref: ./paths/admin/delivers/deliverId/index.yml
+  # メーカー情報
+  '/admin/makers':
+    $ref: ./paths/admin/makers/index.yml
+  '/admin/makers/{makerId}':
+    $ref: ./paths/admin/makers/makerId/index.yml
+  # 商品ランク情報
+  '/admin/productRanks':
+    $ref: ./paths/admin/productRanks/index.yml
+  '/admin/productRanks/{productRankId}':
+    $ref: ./paths/admin/productRanks/productRankId/index.yml
+  # お知らせ
+  '/admin/notices':
+    $ref: ./paths/admin/notices/index.yml
+  '/admin/notices/{noticeId}':
+    $ref: ./paths/admin/notices/noticeId/index.yml
+  # お問い合わせ種別
+  '/admin/inquiryTypes':
+    $ref: ./paths/admin/inquiryTypes/index.yml
+  '/admin/inquiryTypes/{inquiryTypeId}':
+    $ref: ./paths/admin/inquiryTypes/inquiryTypeId/index.yml
+  # お問い合わせ
+  '/admin/inquiries':
+    $ref: ./paths/admin/inquiries/index.yml
+  '/admin/inquiries/{inquiryId}':
+    $ref: ./paths/admin/inquiries/inquiryId/index.yml
+
 components:
   schemas:
     User:
@@ -92,6 +147,8 @@ components:
       $ref: ./schemas/models/ProductType.yml
     Role:
       $ref: ./schemas/models/Role.yml
+    MaskCard:
+      $ref: ./schemas/models/MaskCard.yml
     AuthSignupResponse:
       $ref: ./responses/auth/AuthSignupResponse.yml
     UserShowResponse:

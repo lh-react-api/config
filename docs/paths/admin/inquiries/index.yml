@@ -1,0 +1,62 @@
+get:
+  tags:
+    - inquiries
+  summary: お問い合わせ一覧
+  description: お問い合わせの一覧取得
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/inquiries/InquiriesResponse.yml'
+post:
+  tags:
+    - inquiries
+  summary: お問い合わせ登録
+  description: お問い合わせの登録
+  requestBody:
+    description: 登録するお問い合わせ
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/inquiries/InquiryRequest.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/inquiries/InquiryResponse.yml'
+put:
+  tags:
+    - inquiries
+  summary: お問い合わせ更新
+  description: お問い合わせの更新
+  requestBody:
+    description: 更新するお問い合わせ
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/inquiries/InquiryRequest.yml'
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: '../../../responses/admin/inquiries/InquiryResponse.yml'
+
+definitions:
+  bodyContent:
+    content:
+      application/json:
+        schema:
+          $ref: '../../../requests/admin/inquiries/InquiryRequest.yml'
+  responseContent:
+    content:
+      application/json:
+        schema:
+          $ref: '../../../responses/admin/inquiries/InquiryResponse.yml'

@@ -1,0 +1,14 @@
+title: StripeCvcCheckEnum
+type: string
+description:
+  CVCチェック結果<br>
+   pass:確認済み<br>
+   fail:確認失敗<br>
+   unavailable:確認不要<br>
+   unchecked:確認不可
+enum:
+  - pass
+  - fail
+  - unavailable
+  - unchecked
+example: pass

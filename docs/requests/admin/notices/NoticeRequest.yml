@@ -1,0 +1,30 @@
+title: NoticeRequest
+type: object
+properties:
+  division:
+    $ref: '../../../schemas/enum/notices/NoticeDivisionEnum.yml'
+  title:
+    type: string
+    description: タイトル
+    maxLength: 128
+    example: "重要なお知らせ"
+  text:
+    type: string
+    description: お知らせ内容
+    example: "規約改定に伴い価格が変更します"
+  noticeDate:
+    type: string
+    format: date
+    nullable: true
+    description: 公開日
+    example: "2023-03-15"
+  closeDate:
+    type: string
+    format: date
+    nullable: true
+    description: 終了日
+    example: "2023-03-22"
+required:
+  - division
+  - title
+  - text

@@ -1,0 +1,4 @@
+title: AdminAuthorityResponse
+type: object
+allOf:
+  - $ref: ../../../schemas/models/AdminAuthority.yml

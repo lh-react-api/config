@@ -1,0 +1,8 @@
+in: path
+name: makerId
+description: メーカー情報ID
+required: true
+schema:
+  type: integer
+  description: メーカー情報ID
+  example: 1

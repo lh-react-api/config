@@ -1,0 +1,8 @@
+in: path
+name: deliverTimeId
+description: 配達時間マスタID
+required: true
+schema:
+  type: integer
+  description: 配達時間マスタID
+  example: 1

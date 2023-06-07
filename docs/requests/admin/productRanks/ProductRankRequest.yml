@@ -1,0 +1,26 @@
+title: ProductRankRequest
+type: object
+properties:
+  rank:
+    type: string
+    description: 商品ランク名
+    maxLength: 128
+    example: "S"
+  information:
+    type: string
+    nullable: true
+    description: 商品ランク情報
+    example: "新品"
+  discountRate:
+    type: number
+    description: 割引率
+    example: 0.25
+  priority:
+    type: integer
+    description: 商品選択時に初回選択状態にする優先度（数値が大きいほど優先度高）
+    example: 999
+required:
+  - rank
+  - information
+  - discountRate
+  - priority
