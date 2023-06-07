@@ -1,10 +1,8 @@
 patch:
   tags:
-    - users
+    - my
   summary: ユーザメールアドレス情報更新
   description: ユーザメールアドレス情報更新
-  parameters:
-    - $ref: ../../../../params/UserId.yml
   requestBody:
     description: リクエスト
     required: true

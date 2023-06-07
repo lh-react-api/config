@@ -23,6 +23,8 @@ paths:
   # ログインユーザの情報取得
   '/my/user':
     $ref: ./paths/my/user/index.yml
+  '/my/user/email':
+    $ref: ./paths/my/user/email/index.yml
   '/my/orders':
     $ref: ./paths/my/orders/index.yml
 #  '/users/{userId}':
