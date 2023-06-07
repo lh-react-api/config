@@ -25,6 +25,8 @@ paths:
     $ref: ./paths/my/user/index.yml
   '/my/user/email':
     $ref: ./paths/my/user/email/index.yml
+  '/my/user/password':
+    $ref: ./paths/my/user/password/index.yml
   '/my/orders':
     $ref: ./paths/my/orders/index.yml
 #  '/users/{userId}':
