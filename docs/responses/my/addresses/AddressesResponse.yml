@@ -1,0 +1,4 @@
+title: AddressResponse
+type: array
+items:
+  $ref: ../../../schemas/models/Address.yml

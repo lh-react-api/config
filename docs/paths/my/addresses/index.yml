@@ -1,0 +1,12 @@
+get:
+  tags:
+    - my
+  summary: 住所一覧取得
+  description: ログインユーザの住所を取得する
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../responses/my/addresses/AddressesResponse.yml
