@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Address } from './address';
+import { Order } from './order';
 
 
-export interface AddressesResponseAllOf { 
-    data?: Array<Address>;
+export interface OrdersResponseAllOf { 
+    data?: Array<Order>;
 }
 

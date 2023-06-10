@@ -15,46 +15,6 @@ import { UserStatusEnum } from './userStatusEnum';
 
 export interface UserResponse { 
     /**
-     * 現在のページ番号
-     */
-    currentPage: number;
-    /**
-     * 現在のページの最後のデータ番号
-     */
-    from: number;
-    /**
-     * 最後のページ番号
-     */
-    lastPage: number;
-    /**
-     * 最後のページのURL
-     */
-    lastPageUrl: string;
-    /**
-     * 次のページのURL
-     */
-    nextPageUrl: string;
-    /**
-     * エンドポイント
-     */
-    path: string;
-    /**
-     * １ページ当たりのデータ数
-     */
-    perPage: number;
-    /**
-     * 前のページのURL
-     */
-    prevPageUrl: string;
-    /**
-     * 現在のページの最初データ番号
-     */
-    to: number;
-    /**
-     * 検索ヒット数
-     */
-    total: number;
-    /**
      * id
      */
     id: string;
@@ -66,6 +26,10 @@ export interface UserResponse {
      * Laravelのメール認証日時
      */
     emailVerifiedAt: string | null;
+    /**
+     * パスワード再発行のトークン
+     */
+    emailReissueToken?: string | null;
     social?: UserSocialEnum;
     /**
      * 管理者フラグ
