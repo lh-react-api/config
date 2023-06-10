@@ -27,10 +27,6 @@ export interface Order {
     userId: number;
     progress: OrderProgressEnum;
     /**
-     * progressのラベル
-     */
-    progressLabel?: string;
-    /**
      * 発送追跡番号
      */
     sentTrackingNumber: string;

@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Order } from './order';
+import { Address } from './address';
 
 
-export interface OrdersResponse { 
+export interface AddressesResponse { 
     /**
      * 現在のページ番号
      */
@@ -53,6 +53,6 @@ export interface OrdersResponse {
      * 検索ヒット数
      */
     total: number;
-    data: Array<Order>;
+    data: Array<Address>;
 }
 
