@@ -23,7 +23,7 @@ export interface ProductRankResponse {
     /**
      * 商品ランク情報
      */
-    information?: string | null;
+    information: string | null;
     /**
      * 割引率
      */

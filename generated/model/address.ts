@@ -55,7 +55,7 @@ export interface Address {
     /**
      * 建物名・部屋番号
      */
-    building?: string | null;
+    building: string | null;
     /**
      * デフォルトフラグ
      */

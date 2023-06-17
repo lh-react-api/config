@@ -165,6 +165,8 @@ components:
       $ref: ./schemas/models/ProductType.yml
     Role:
       $ref: ./schemas/models/Role.yml
+    MaskCard:
+      $ref: ./schemas/models/MaskCard.yml
     AuthSignupResponse:
       $ref: ./responses/auth/AuthSignupResponse.yml
     UserShowResponse:

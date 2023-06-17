@@ -74,6 +74,12 @@ required:
   - genreId
   - makerId
   - name
+  - information
+  - coutionText
+  - size
+  - weight
+  - releaseDate
+  - thumbnail
   - createdAt
   - updatedAt
   - createdBy

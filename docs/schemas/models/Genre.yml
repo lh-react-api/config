@@ -50,7 +50,10 @@ properties:
 required:
   - id
   - name
+  - upperId
   - level
+  - information
+  - image
   - createdAt
   - updatedAt
   - createdBy
