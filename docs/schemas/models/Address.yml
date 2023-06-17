@@ -89,7 +89,6 @@ required:
   - prefectureName
   - city
   - block
-  - building
   - isDefault
   - createdAt
   - updatedAt

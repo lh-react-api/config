@@ -36,7 +36,6 @@ properties:
 required:
   - id
   - name
-  - information
   - createdAt
   - updatedAt
   - createdBy
