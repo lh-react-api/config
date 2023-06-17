@@ -44,7 +44,6 @@ properties:
 required:
   - id
   - rank
-  - information
   - discountRate
   - priority
   - createdAt

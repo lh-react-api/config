@@ -21,6 +21,5 @@ properties:
     example: 999
 required:
   - rank
-  - information
   - discountRate
   - priority

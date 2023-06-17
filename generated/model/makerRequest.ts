@@ -19,6 +19,6 @@ export interface MakerRequest {
     /**
      * メーカー情報
      */
-    information: string | null;
+    information?: string | null;
 }
 

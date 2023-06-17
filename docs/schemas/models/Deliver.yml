@@ -88,8 +88,7 @@ required:
   - prefectureName
   - city
   - block
-  - building
-  - phonenumber
+  - phoneNumber
   - email
   - createdAt
   - updatedAt

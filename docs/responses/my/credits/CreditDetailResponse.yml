@@ -1,0 +1,4 @@
+title: CreditDetailResponse
+type: array
+items:
+  $ref: ../../../schemas/models/CreditDetail.yml
