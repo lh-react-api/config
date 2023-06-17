@@ -47,11 +47,11 @@ export interface DeliverRequest {
     /**
      * 建物名・部屋番号
      */
-    building: string | null;
+    building?: string | null;
     /**
      * 電話番号
      */
-    phoneNumber?: string;
+    phoneNumber: string;
     /**
      * 連絡用メールアドレス
      */

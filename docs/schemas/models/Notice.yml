@@ -56,8 +56,6 @@ required:
   - division
   - title
   - text
-  - noticeDate
-  - closeDate
   - createdAt
   - updatedAt
   - createdBy

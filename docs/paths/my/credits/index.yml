@@ -9,4 +9,4 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../../responses/my/credits/MaskCardsResponse.yml
+            $ref: ../../../responses/my/credits/CreditDetailResponse.yml

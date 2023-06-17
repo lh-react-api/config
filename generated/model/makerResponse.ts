@@ -23,7 +23,7 @@ export interface MakerResponse {
     /**
      * メーカー情報
      */
-    information: string | null;
+    information?: string | null;
     /**
      * 作成日
      */
