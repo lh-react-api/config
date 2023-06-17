@@ -23,7 +23,7 @@ export interface Genre {
     /**
      * 上位階層ジャンルID
      */
-    upperId?: number | null;
+    upperId: number | null;
     /**
      * 階層レベル
      */
@@ -31,11 +31,11 @@ export interface Genre {
     /**
      * ジャンル情報
      */
-    information?: string | null;
+    information: string | null;
     /**
      * ジャンルサムネイル画像
      */
-    image?: string | null;
+    image: string | null;
     /**
      * 作成日
      */
