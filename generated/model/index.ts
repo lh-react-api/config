@@ -44,6 +44,8 @@ export * from './makersResponseAllOf';
 export * from './maskCard';
 export * from './maskCardsResponse';
 export * from './maskCardsResponseAllOf';
+export * from './myAdminAuthority';
+export * from './myAdminAuthorityAuthority';
 export * from './notice';
 export * from './noticeDivisionEnum';
 export * from './noticeRequest';
