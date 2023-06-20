@@ -15,6 +15,6 @@ export interface StripeCustomerIdResponse {
     /**
      * stripe顧客ID
      */
-    stripeCustomerId?: string;
+    stripeCustomerId: string;
 }
 

@@ -6,4 +6,4 @@ allOf:
         description: stripe顧客ID
         example: "cus_NyReAjifVj9gHO"
 required:
-  - token
+  - stripeCustomerId
