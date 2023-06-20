@@ -37,6 +37,8 @@ paths:
     $ref: ./paths/my/addresses/index.yml
   '/my/orders':
     $ref: ./paths/my/orders/index.yml
+  '/my/admin/adminAuthorities':
+    $ref: ./paths/my/admin/adminAuthorities/index.yml
   '/addresses':
     $ref: ./paths/addresses/index.yml
   '/addresses/{addressId}':
