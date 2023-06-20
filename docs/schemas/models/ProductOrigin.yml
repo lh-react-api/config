@@ -23,7 +23,7 @@ properties:
     nullable: true
     description: 商品情報
     example: "次世代ゲーム機のPlayStation5です"
-  coutionText:
+  cautionText:
     type: string
     nullable: true
     description: 商品情報

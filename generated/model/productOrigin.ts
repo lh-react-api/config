@@ -35,7 +35,7 @@ export interface ProductOrigin {
     /**
      * 商品情報
      */
-    coutionText?: string | null;
+    cautionText?: string | null;
     /**
      * 商品サイズ
      */
