@@ -13,6 +13,6 @@ import { CreditDetail } from './creditDetail';
 
 
 export interface CreditDetailResponse { 
-    data?: Array<CreditDetail>;
+    data: Array<CreditDetail>;
 }
 
