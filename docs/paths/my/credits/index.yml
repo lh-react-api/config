@@ -5,8 +5,27 @@ get:
   description: stripeに登録したクレジットカード情報をリストで返却する
   responses:
     '200':
-      description: '200'
+      description: '登録済みのカード情報のリスト'
       content:
         application/json:
           schema:
-            $ref: ../../../responses/my/credits/MaskCardsResponse.yml
+            $ref: ../../../responses/my/credits/CreditDetailResponse.yml
+post:
+  tags:
+    - my
+  summary: カード情報の登録
+  description: トークン化したカード情報をログインユーザーのstripeに登録する
+  requestBody:
+    description: トークン化したカード情報
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../../requests/credits/TokenCardRequest.yml
+  responses:
+    '200':
+      description: '登録済みのカード情報のリスト'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../responses/my/credits/CreditDetailResponse.yml

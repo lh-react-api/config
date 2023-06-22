@@ -1,0 +1,8 @@
+title: CreditDetailResponse
+type: object
+allOf:
+  - properties:
+      data:
+        type: array
+        items:
+          $ref: ../../../schemas/models/CreditDetail.yml
