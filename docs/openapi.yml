@@ -68,6 +68,9 @@ paths:
   # おすすめ商品
   '/recommendProducts':
     $ref: ./paths/recommendProducts/index.yml
+  # クライアントシークレットの発行
+  '/my/stripe/clientSecret':
+    $ref: ./paths/my/stripe/clientSecret.yml
   # 登録済みクレジットカード情報
   '/my/credits':
     $ref: ./paths/my/credits/index.yml
