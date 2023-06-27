@@ -1,0 +1,12 @@
+post:
+  tags:
+    - productOrigins
+  summary: 商品原本一覧
+  description: 商品原本一覧
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../responses/productOrigins/ProductOriginsResponse.yml
