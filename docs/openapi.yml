@@ -41,8 +41,6 @@ paths:
   # 住所
   '/addresses':
     $ref: ./paths/addresses/index.yml
-  '/addresses':
-    $ref: ./paths/addresses/index.yml
   '/addresses/{addressId}':
     $ref: ./paths/addresses/addressId/index.yml
     
