@@ -1,0 +1,20 @@
+title: CreateRequest
+type: object
+properties:
+  inquiry_type_id:
+    type: integer
+    description: お問い合わせ種別ID
+    example: 1
+  email:
+    type: integer
+    description: メールアドレス
+    example: 1
+  text:
+    type: string
+    description: お問い合わせ内容
+    example: 'お問い合わせ内容'
+
+required:
+  - inquiry_type_id
+  - email
+  - text

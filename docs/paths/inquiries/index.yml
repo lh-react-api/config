@@ -1,0 +1,20 @@
+post:
+  tags:
+    - inquiries
+  summary: お問い合わせ登録
+  description: お問い合わせ登録
+  requestBody:
+    description: リクエスト
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../requests/inquiries/CreateRequest.yml
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            ## TODO: [data:[]]に変更する
+            $ref: ../../schemas/models/Address.yml
