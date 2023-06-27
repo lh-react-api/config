@@ -1,0 +1,35 @@
+get:
+  tags:
+    - genres
+  summary: ジャンル一覧
+  description: ジャンル一覧
+  parameters:
+    - in: query
+      name: name_like
+      description: 名前
+      required: false
+      schema:
+        type: string
+        description: 名前
+        example: 'ゲーム'
+    - in: query
+      name: position_eq
+      description: ポジション
+      required: false
+      schema:
+        type: integer
+        description: ポジション
+    - in: query
+      name: parent_id_eq
+      description: 親のID
+      required: false
+      schema:
+        type: integer
+        description: 親のID
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../responses/genres/GenresResponse.yml
