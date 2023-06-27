@@ -1,0 +1,32 @@
+title: ProductOrigins
+type: object
+allOf:
+  - $ref: ../../schemas/models/Pagination.yml
+  - properties:
+      data:
+        type: array
+        items:
+          allOf:
+            - $ref: ../../schemas/models/ProductOrigin.yml
+            - properties:
+                products:
+                  type: array
+                  items:
+                    allOf:
+                      - $ref: ../../schemas/models/Product.yml
+                      - properties:
+                          productType:
+                            $ref: ../../schemas/models/ProductType.yml
+                      - properties:
+                          productRank:
+                            $ref: ../../schemas/models/ProductRank.yml
+                priceMinProduct:
+                  $ref: ../../schemas/models/Product.yml
+                priceMaxProduct:
+                  $ref: ../../schemas/models/Product.yml
+                maker:
+                  $ref: ../../schemas/models/Maker.yml
+                genre:
+                  $ref: ../../schemas/models/Genre.yml
+required:
+  - data

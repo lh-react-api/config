@@ -37,12 +37,21 @@ paths:
     $ref: ./paths/my/addresses/index.yml
   '/my/orders':
     $ref: ./paths/my/orders/index.yml
-  '/my/admin/adminAuthorities':
-    $ref: ./paths/my/admin/adminAuthorities/index.yml
+    
+  # 住所
+  '/addresses':
+    $ref: ./paths/addresses/index.yml
   '/addresses':
     $ref: ./paths/addresses/index.yml
   '/addresses/{addressId}':
     $ref: ./paths/addresses/addressId/index.yml
+    
+  # 商品原本検索
+  '/productOrigins':
+    $ref: ./paths/productOrigins/index.yml
+  '/my/admin/adminAuthorities':
+    $ref: ./paths/my/admin/adminAuthorities/index.yml
+
 #  '/users/{userId}':
 #    $ref: ./paths/users/userId/index.yml
 #  '/users/{userId}/email':
