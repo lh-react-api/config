@@ -28,6 +28,10 @@ export interface UserShowResponse {
      * Laravelのメール認証日時
      */
     emailVerifiedAt: string | null;
+    /**
+     * パスワード再発行のトークン
+     */
+    emailReissueToken?: string | null;
     social?: UserSocialEnum;
     /**
      * 管理者フラグ

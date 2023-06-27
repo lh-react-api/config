@@ -9,35 +9,57 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { OrderProgressEnum } from './orderProgressEnum';
 
 
-export interface Order { 
+export interface AddressResponse { 
     /**
-     * 注文情報ID
+     * 住所ID
      */
     id: number;
-    /**
-     * 商品ID
-     */
-    productId: number;
     /**
      * ユーザーID
      */
     userId: number;
-    progress: OrderProgressEnum;
     /**
-     * progressのラベル
+     * 苗字
      */
-    progressLabel?: string;
+    lastName: string;
     /**
-     * 発送追跡番号
+     * 苗字（かな）
      */
-    sentTrackingNumber: string;
+    lastNameKana: string;
     /**
-     * 返送追跡番号
+     * 名前
      */
-    returnTrackingNumber: string;
+    firstName: string;
+    /**
+     * 名前（かな）
+     */
+    firstNameKana: string;
+    /**
+     * 郵便番号
+     */
+    postNumber: string;
+    /**
+     * 都道府県
+     */
+    prefectureName: string;
+    /**
+     * 市区町村
+     */
+    city: string;
+    /**
+     * 番地
+     */
+    block: string;
+    /**
+     * 建物名・部屋番号
+     */
+    building: string | null;
+    /**
+     * デフォルトフラグ
+     */
+    isDefault: boolean;
     /**
      * 作成日
      */
@@ -55,7 +77,4 @@ export interface Order {
      */
     updatedBy: number;
 }
-export namespace Order {
-}
-
 

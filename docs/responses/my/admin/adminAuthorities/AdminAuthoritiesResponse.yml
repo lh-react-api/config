@@ -1,0 +1,4 @@
+title: AdminAuthoritiesResponse
+type: array
+items:
+  $ref: ../../../../schemas/models/MyAdminAuthority.yml

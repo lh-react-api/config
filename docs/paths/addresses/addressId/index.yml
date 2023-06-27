@@ -1,0 +1,33 @@
+put:
+  tags:
+    - addresses
+  summary: 住所更新
+  description: 住所の更新
+  parameters:
+    - $ref: ../../../params/AddressId.yml
+  requestBody:
+    description: リクエスト
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../../requests/addresses/CreateAddressRequest.yml
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../schemas/models/Address.yml
+
+delete:
+  tags:
+    - addresses
+  summary: 住所削除
+  description: 住所の削除
+  parameters:
+    - $ref: ../../../params/AddressId.yml
+  responses:
+    '200':
+      description: '200'
+      content: null

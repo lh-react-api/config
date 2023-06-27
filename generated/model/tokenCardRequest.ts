@@ -9,10 +9,12 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Address } from './address';
 
 
-export interface AddressesResponseAllOf { 
-    data?: Array<Address>;
+export interface TokenCardRequest { 
+    /**
+     * トークン化したカード情報
+     */
+    token: string;
 }
 

@@ -1,0 +1,43 @@
+title: MyAdminAuthority
+type: object
+properties:
+  name:
+    type: string
+    description: 権限名
+    example: users
+  jaName:
+    type: string
+    description: 権限和名
+    example: ユーザー情報管理権限
+  authority:
+    type: object
+    properties:
+      create:
+        type: boolean
+        description: ユーザーの作成権限
+        example: true
+      read:
+        type: boolean
+        description: ユーザーの読み取り権限
+        example: true
+      update:
+        type: boolean
+        description: ユーザーの更新権限
+        example: true
+      delete:
+        type: boolean
+        description: ユーザーの削除権限
+        example: true
+    required:
+      - create
+      - read
+      - update
+      - delete
+required:
+  - name
+  - jaName
+  - authority
+  - create
+  - read
+  - update
+  - delete
