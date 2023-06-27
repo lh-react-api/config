@@ -1,0 +1,21 @@
+get:
+  tags:
+    - users
+  summary: パスワード再設定依頼
+  description: 対象のユーザにトークンURL付きのメールを送信する。（ローカルの場合はmailhogで確認して）
+  parameters:
+    - in: path
+      name: email
+      description: メールアドレス
+      required: true
+      schema:
+        type: string
+        description: メールアドレス
+        example: ishikawa@sg.sandbox
+  responses:
+    '200':
+      description: '200'
+      content:
+        application/json:
+          schema:
+            type: 'null'
