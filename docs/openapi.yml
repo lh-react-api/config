@@ -31,8 +31,8 @@ paths:
     $ref: ./paths/my/user/withdrawal/index.yml
   '/my/address/default':
     $ref: ./paths/my/address/default/index.yml
-  '/my/address/idDefault':
-    $ref: ./paths/my/address/idDefault/index.yml
+  '/my/address/isDefault':
+    $ref: ./paths/my/address/isDefault/index.yml
   '/my/addresses':
     $ref: ./paths/my/addresses/index.yml
   '/my/orders':
