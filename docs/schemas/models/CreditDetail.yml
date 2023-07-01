@@ -12,13 +12,13 @@ properties:
   cvcCheck:
     $ref: ../enum/stripe/StripeCvcCheckEnum.yml
   expMonth:
-    type: number
+    type: string
     description: 有効期限(月)
-    example: 1
+    example: '01'
   expYear:
-    type: number
+    type: string
     description: 有効期限(年)
-    example: 2023
+    example: '2023'
   last4:
     type: string
     description: カード番号末尾4桁

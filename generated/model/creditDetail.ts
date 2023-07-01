@@ -25,11 +25,11 @@ export interface CreditDetail {
     /**
      * 有効期限(月)
      */
-    expMonth: number;
+    expMonth: string;
     /**
      * 有効期限(年)
      */
-    expYear: number;
+    expYear: string;
     /**
      * カード番号末尾4桁
      */
