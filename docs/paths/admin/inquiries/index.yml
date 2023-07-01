@@ -1,18 +1,18 @@
 get:
   tags:
-    - inquiries
+    - admin/inquiries
   summary: お問い合わせ一覧
   description: お問い合わせの一覧取得
   responses:
     '200':
-      description: '200'
+      description: '正常応答'
       content:
         application/json:
           schema:
             $ref: '../../../responses/admin/inquiries/InquiriesResponse.yml'
 post:
   tags:
-    - inquiries
+    - admin/inquiries
   summary: お問い合わせ登録
   description: お問い合わせの登録
   requestBody:
@@ -24,14 +24,14 @@ post:
           $ref: '../../../requests/admin/inquiries/InquiryRequest.yml'
   responses:
     '200':
-      description: '200'
+      description: '正常応答'
       content:
         application/json:
           schema:
             $ref: '../../../responses/admin/inquiries/InquiryResponse.yml'
 put:
   tags:
-    - inquiries
+    - admin/inquiries
   summary: お問い合わせ更新
   description: お問い合わせの更新
   requestBody:
@@ -43,7 +43,7 @@ put:
           $ref: '../../../requests/admin/inquiries/InquiryRequest.yml'
   responses:
     '200':
-      description: '200'
+      description: '正常応答'
       content:
         application/json:
           schema:

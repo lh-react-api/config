@@ -20,58 +20,67 @@ paths:
   /auth/signup:
     $ref: ./paths/auth/signup/index.yml
 
-  # ログインユーザの情報取得
-  '/my/user':
+  # ログインユーザー関連のエンドポイント
+  /my/user:
     $ref: ./paths/my/user/index.yml
-  '/my/user/email':
+  /my/user/email:
     $ref: ./paths/my/user/email/index.yml
-  '/my/user/password':
+  /my/user/password:
     $ref: ./paths/my/user/password/index.yml
-  '/my/user/withdrawal':
+  /my/user/withdrawal:
     $ref: ./paths/my/user/withdrawal/index.yml
-  '/my/address/default':
+  /my/address/default:
     $ref: ./paths/my/address/default/index.yml
-  '/my/address/idDefault':
-    $ref: ./paths/my/address/idDefault/index.yml
-  '/my/addresses':
+  /my/address/isDefault:
+    $ref: ./paths/my/address/isDefault/index.yml
+  /my/addresses:
     $ref: ./paths/my/addresses/index.yml
-  '/my/orders':
+  /my/orders:
     $ref: ./paths/my/orders/index.yml
-  '/addresses':
+  /my/admin/adminAuthorities:
+    $ref: ./paths/my/admin/adminAuthorities/index.yml
+  /my/stripe/clientSecret:
+    $ref: ./paths/my/stripe/clientSecret.yml
+  /my/credits:
+    $ref: ./paths/my/credits/index.yml
+
+  # 住所
+  /addresses:
     $ref: ./paths/addresses/index.yml
-  '/addresses/{addressId}':
+  /addresses/{addressId}:
     $ref: ./paths/addresses/addressId/index.yml
-#  '/users/{userId}':
-#    $ref: ./paths/users/userId/index.yml
-#  '/users/{userId}/email':
-#    $ref: ./paths/users/userId/email/index.yml
-#  '/users/{userId}/password':
-#    $ref: ./paths/users/userId/password/index.yml
-#  '/users/{emailReissueToken}/password/reissue':
-#    $ref: ./paths/users/emailReissueToken/password/reissue/index.yml
-#  '/users/{email}/password/reissue':
-#    $ref: ./paths/users/email/password/reissue/index.yml
-#  '/users/{userId}/withdrawal':
-#    $ref: ./paths/users/userId/withdrawal/index.yml
-#  # 住所
-#  '/addresses':
-#    $ref: ./paths/addresses/index.yml
-#  '/users/{userId}/addresses/isDefault':
-#    $ref: ./paths/users/userId/addresses/isDefault/index.yml
+  # ユーザーのパスワード再設定関連
+  /users/{emailReissueToken}/password/reissue:
+    $ref: ./paths/users/emailReissueToken/password/reissue/index.yml
+  /users/{email}/password/reissue:
+    $ref: ./paths/users/email/password/reissue/index.yml
+
+  # 商品原本検索
+  /productOrigins:
+    $ref: ./paths/productOrigins/index.yml
+
+  # ジャンル
+  /genres:
+    $ref: ./paths/genres/index.yml
+
+  # 商品レビュー
+  /productReviews:
+    $ref: ./paths/productReviews/index.yml
+  # 商品レビュー
+  /deliverTimes:
+    $ref: ./paths/deliverTimes/index.yml
+  # お問い合わせ
+  /inquiries:
+    $ref: ./paths/inquiries/index.yml
+
   # お知らせ
-  '/notices':
+  /notices:
     $ref: ./paths/notices/index.yml
-  '/notices/{noticeId}':
+  /notices/{noticeId}:
     $ref: ./paths/notices/noticeId/index.yml
   # おすすめ商品
-  '/recommendProducts':
+  /recommendProducts:
     $ref: ./paths/recommendProducts/index.yml
-  # 登録済みクレジットカード情報
-  '/my/credits':
-    $ref: ./paths/my/credits/index.yml
-  # stripe顧客ID取得
-  '/my/credits/id':
-    $ref: ./paths/my/credits/id/index.yml
 
 
   # 管理API群
@@ -133,6 +142,8 @@ components:
       $ref: ./schemas/models/CreditDetail.yml
     AdminAuthority:
       $ref: ./schemas/models/AdminAuthority.yml
+    MyAdminAuthority:
+      $ref: ./schemas/models/MyAdminAuthority.yml
     Deliver:
       $ref: ./schemas/models/Deliver.yml
     DeliverTime:
@@ -165,9 +176,5 @@ components:
       $ref: ./schemas/models/ProductType.yml
     Role:
       $ref: ./schemas/models/Role.yml
-    AuthSignupResponse:
-      $ref: ./responses/auth/AuthSignupResponse.yml
-    UserShowResponse:
-      $ref: ./responses/users/UserShowResponse.yml
-    UsersResponse:
-      $ref: ./responses/users/UsersResponse.yml
+    Pagenation:
+      $ref: ./schemas/models/Pagination.yml

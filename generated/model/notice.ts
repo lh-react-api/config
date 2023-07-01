@@ -21,7 +21,7 @@ export interface Notice {
     /**
      * NoticeDivisionのラベル
      */
-    divisionLabel?: string;
+    divisionLabel: string;
     /**
      * タイトル
      */

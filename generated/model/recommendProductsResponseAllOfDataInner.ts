@@ -37,6 +37,6 @@ export interface RecommendProductsResponseAllOfDataInner {
      * 更新者
      */
     updatedBy: number;
-    product?: Product;
+    product: Product;
 }
 

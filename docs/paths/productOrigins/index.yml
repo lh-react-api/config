@@ -1,0 +1,40 @@
+post:
+  tags:
+    - productOrigins
+  summary: 商品原本一覧
+  description: 商品原本一覧
+  parameters:
+    - in: query
+      name: name_like
+      description: 名前
+      required: false
+      schema:
+        type: string
+        description: 名前
+        example: '石川'
+    - in: query
+      name: genre_id_in
+      description: ジャンルIDたち
+      required: false
+      schema:
+        type: array
+        description: '?target[0]=xxxのような渡し方'
+        items:
+          type: integer
+
+    - in: query
+      name: maker_id_in
+      description: メーカーIDたち
+      required: false
+      schema:
+        type: array
+        description: '?target[0]=xxxのような渡し方'
+        items:
+          type: integer
+  responses:
+    '200':
+      description: '正常応答'
+      content:
+        application/json:
+          schema:
+            $ref: ../../responses/productOrigins/ProductOriginsResponse.yml

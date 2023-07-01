@@ -14,11 +14,11 @@ put:
           $ref: ../../../requests/addresses/CreateAddressRequest.yml
   responses:
     '200':
-      description: '200'
+      description: '正常応答'
       content:
         application/json:
           schema:
-            $ref: ../../../schemas/models/Address.yml
+            $ref: ../../../responses/addresses/AddressResponse.yml
 
 delete:
   tags:
@@ -29,5 +29,4 @@ delete:
     - $ref: ../../../params/AddressId.yml
   responses:
     '200':
-      description: '200'
-      content: null
+      description: '正常応答'

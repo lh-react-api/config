@@ -9,32 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { Role } from './role';
 
 
 export interface RoleResponse { 
-    /**
-     * 管理権限マスタID
-     */
-    id: number;
-    /**
-     * 管理権限名
-     */
-    name: string;
-    /**
-     * 作成日
-     */
-    createdAt: string;
-    /**
-     * 更新日
-     */
-    updatedAt: string;
-    /**
-     * 作成者
-     */
-    createdBy: number;
-    /**
-     * 更新者
-     */
-    updatedBy: number;
+    data: Role;
 }
 

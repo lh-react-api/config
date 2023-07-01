@@ -9,40 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { DeliverTime } from './deliverTime';
 
 
 export interface DeliverTimeResponse { 
-    /**
-     * 配達時間マスタID
-     */
-    id: number;
-    /**
-     * 配達時間
-     */
-    deliverTime: string;
-    /**
-     * 表示順序
-     */
-    order: number;
-    /**
-     * 受付締切時間
-     */
-    deadline: string;
-    /**
-     * 作成日
-     */
-    createdAt: string;
-    /**
-     * 更新日
-     */
-    updatedAt: string;
-    /**
-     * 作成者
-     */
-    createdBy: number;
-    /**
-     * 更新者
-     */
-    updatedBy: number;
+    data: DeliverTime;
 }
 

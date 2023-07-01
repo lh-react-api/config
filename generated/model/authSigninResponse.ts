@@ -9,12 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { AuthSigninResponseAllOfData } from './authSigninResponseAllOfData';
 
 
 export interface AuthSigninResponse { 
-    /**
-     * トークン
-     */
-    token: string;
+    data: AuthSigninResponseAllOfData;
 }
 

@@ -5,8 +5,4 @@ post:
   description: ログアウトをします。
   responses:
     '200':
-      description: '200'
-      content:
-        application/json:
-          schema:
-            type: 'null'
+      description: '正常応答'

@@ -1,4 +1,9 @@
 title: MakerResponse
 type: object
 allOf:
-  - $ref: ../../../schemas/models/Maker.yml
+  - properties:
+      data:
+        type: object
+        $ref: ../../../schemas/models/Maker.yml
+required:
+  - data

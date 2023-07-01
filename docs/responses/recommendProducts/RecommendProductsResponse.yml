@@ -1,4 +1,4 @@
-title: AddressesResponse
+title: RecommendProductsResponse
 type: object
 allOf:
   - $ref: ../../schemas/models/Pagination.yml
@@ -12,5 +12,7 @@ allOf:
             - properties:
                 product:
                   $ref: ../../schemas/models/Product.yml
+              required:
+                - product
 required:
   - data

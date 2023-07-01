@@ -54,6 +54,7 @@ properties:
 required:
   - id
   - division
+  - divisionLabel
   - title
   - text
   - createdAt

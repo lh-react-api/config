@@ -9,36 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { Maker } from './maker';
 
 
 export interface MakerResponse { 
-    /**
-     * メーカーID
-     */
-    id: number;
-    /**
-     * メーカー名
-     */
-    name: string;
-    /**
-     * メーカー情報
-     */
-    information?: string | null;
-    /**
-     * 作成日
-     */
-    createdAt: string;
-    /**
-     * 更新日
-     */
-    updatedAt: string;
-    /**
-     * 作成者
-     */
-    createdBy: number;
-    /**
-     * 更新者
-     */
-    updatedBy: number;
+    data: Maker;
 }
 
