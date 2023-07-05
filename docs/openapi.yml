@@ -37,8 +37,6 @@ paths:
     $ref: ./paths/my/addresses/index.yml
   /my/orders:
     $ref: ./paths/my/orders/index.yml
-  /my/admin/adminAuthorities:
-    $ref: ./paths/my/admin/adminAuthorities/index.yml
   /my/stripe/clientSecret:
     $ref: ./paths/my/stripe/clientSecret.yml
   /my/credits:
@@ -84,6 +82,9 @@ paths:
 
 
   # 管理API群
+  # ログインユーザー関連
+  /my/admin/adminAuthorities:
+    $ref: ./paths/my/admin/adminAuthorities/index.yml
   # 管理権限
   '/admin/adminAuthorities':
     $ref: ./paths/admin/adminAuthorities/index.yml
