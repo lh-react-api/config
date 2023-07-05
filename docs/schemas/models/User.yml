@@ -53,8 +53,9 @@ properties:
 required:
   - id
   - email
-  - emailVerifiedAt
+  - social
   - isAdmin
+  - status
   - statusLabel
   - createdAt
   - updatedAt

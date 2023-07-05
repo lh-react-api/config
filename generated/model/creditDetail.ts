@@ -9,24 +9,33 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { StripeCvcCheckEnum } from './stripeCvcCheckEnum';
 
 
 export interface CreditDetail { 
     /**
-     * カード会社
+     * stripeカードID
      */
-    company?: string;
+    cardId: string;
     /**
-     * 下４桁
+     * カード会社名
      */
-    anderNumber: string;
+    brand: string;
+    cvcCheck: StripeCvcCheckEnum;
     /**
-     * 有効期限
+     * 有効期限(月)
      */
-    ttl: string;
+    expMonth: string;
     /**
-     * 利用可否
+     * 有効期限(年)
      */
-    availability: string;
+    expYear: string;
+    /**
+     * カード番号末尾4桁
+     */
+    last4: string;
 }
+export namespace CreditDetail {
+}
+
 

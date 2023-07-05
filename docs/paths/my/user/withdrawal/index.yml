@@ -1,12 +1,12 @@
 delete:
   tags:
-    - my
+    - my/user
   summary: ユーザ退会
   description: ユーザ退会
   responses:
     '200':
-      description: '200'
+      description: '正常応答'
       content:
         application/json:
           schema:
-            $ref: ../../../../schemas/models/User.yml
+            $ref: ../../../../responses/my/user/UserResponse.yml

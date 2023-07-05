@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Product } from './product';
+import { ProductRank } from './productRank';
 
 
-export interface RecommendProductsResponseAllOfDataInnerAllOf { 
-    product?: Product;
+export interface ProductOriginsResponseAllOfDataInnerAllOfProductsInnerAllOf1 { 
+    productRank: ProductRank;
 }
 

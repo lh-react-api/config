@@ -9,10 +9,20 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { RecommendProductsResponseAllOfDataInner } from './recommendProductsResponseAllOfDataInner';
 
 
-export interface RecommendProductsResponseAllOf { 
-    data?: Array<RecommendProductsResponseAllOfDataInner>;
+export interface CreateRequest1 { 
+    /**
+     * お問い合わせ種別ID
+     */
+    inquiry_type_id: number;
+    /**
+     * メールアドレス
+     */
+    email: number;
+    /**
+     * お問い合わせ内容
+     */
+    text: string;
 }
 

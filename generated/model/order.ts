@@ -29,7 +29,7 @@ export interface Order {
     /**
      * progressのラベル
      */
-    progressLabel?: string;
+    progressLabel: string;
     /**
      * 発送追跡番号
      */

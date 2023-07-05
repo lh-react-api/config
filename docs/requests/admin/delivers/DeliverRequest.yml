@@ -65,6 +65,5 @@ required:
   - prefectureName
   - city
   - block
-  - building
-  - phonenumber
+  - phoneNumber
   - email

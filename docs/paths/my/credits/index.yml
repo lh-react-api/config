@@ -1,6 +1,6 @@
 get:
   tags:
-    - my
+    - my/credits
   summary: 登録済みクレジットカードリスト取得
   description: stripeに登録したクレジットカード情報をリストで返却する
   responses:
@@ -12,7 +12,7 @@ get:
             $ref: ../../../responses/my/credits/CreditDetailResponse.yml
 post:
   tags:
-    - my
+    - my/credits
   summary: カード情報の登録
   description: トークン化したカード情報をログインユーザーのstripeに登録する
   requestBody:

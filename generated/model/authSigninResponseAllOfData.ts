@@ -9,10 +9,12 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { ProductRank } from './productRank';
 
 
-export interface ProductRanksResponseAllOf { 
-    data?: Array<ProductRank>;
+export interface AuthSigninResponseAllOfData { 
+    /**
+     * トークン
+     */
+    token: string;
 }
 

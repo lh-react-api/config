@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { StripeClientSecretResponseAllOfData } from './stripeClientSecretResponseAllOfData';
+import { Address } from './address';
 
 
-export interface StripeClientSecretResponseAllOf { 
-    data?: StripeClientSecretResponseAllOfData;
+export interface AddressResponse1 { 
+    data: Address;
 }
 

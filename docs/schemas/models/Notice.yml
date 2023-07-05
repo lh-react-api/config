@@ -54,10 +54,9 @@ properties:
 required:
   - id
   - division
+  - divisionLabel
   - title
   - text
-  - noticeDate
-  - closeDate
   - createdAt
   - updatedAt
   - createdBy

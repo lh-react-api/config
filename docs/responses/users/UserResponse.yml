@@ -1,3 +1,8 @@
 title: UserResponse
 allOf:
-  - $ref: ../../schemas/models/User.yml
+  - type: object
+    properties:
+      data:
+        $ref: ../../schemas/models/User.yml
+required:
+  - data

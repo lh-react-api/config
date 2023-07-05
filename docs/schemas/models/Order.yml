@@ -52,6 +52,7 @@ required:
   - productId
   - userId
   - progress
+  - progressLabel
   - sentTrackingNumber
   - returnTrackingNumber
   - createdAt

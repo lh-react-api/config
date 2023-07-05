@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { MaskCard } from './maskCard';
+import { Notice } from './notice';
 
 
-export interface MaskCardsResponseAllOf { 
-    data?: Array<MaskCard>;
+export interface NoticeResponse1 { 
+    data: Notice;
 }
 

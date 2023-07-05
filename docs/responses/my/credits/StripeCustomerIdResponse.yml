@@ -1,9 +1,0 @@
-title: StripeCustomerIdResponse
-allOf:
-  - properties:
-      stripeCustomerId:
-        type: string
-        description: stripe顧客ID
-        example: "cus_NyReAjifVj9gHO"
-required:
-  - token

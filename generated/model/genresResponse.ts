@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { User } from './user';
+import { Genre } from './genre';
 
 
-export interface UsersResponse { 
+export interface GenresResponse { 
     /**
      * 現在のページ番号
      */
@@ -53,6 +53,6 @@ export interface UsersResponse {
      * 検索ヒット数
      */
     total: number;
-    data: Array<User>;
+    data: Array<Genre>;
 }
 

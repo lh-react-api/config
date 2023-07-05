@@ -9,55 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { UserSocialEnum } from './userSocialEnum';
-import { UserStatusEnum } from './userStatusEnum';
+import { User } from './user';
 
 
 export interface UserResponse { 
-    /**
-     * id
-     */
-    id: string;
-    /**
-     * メールアドレス
-     */
-    email: string;
-    /**
-     * Laravelのメール認証日時
-     */
-    emailVerifiedAt: string | null;
-    /**
-     * パスワード再発行のトークン
-     */
-    emailReissueToken?: string | null;
-    social?: UserSocialEnum;
-    /**
-     * 管理者フラグ
-     */
-    isAdmin: boolean;
-    status?: UserStatusEnum;
-    /**
-     * ステータスのラベル
-     */
-    statusLabel: string;
-    /**
-     * 作成日
-     */
-    createdAt: string;
-    /**
-     * 更新日
-     */
-    updatedAt: string;
-    /**
-     * 作成者
-     */
-    createdBy: number;
-    /**
-     * 更新者
-     */
-    updatedBy: number;
+    data: User;
 }
-export namespace UserResponse {
-}
-
 

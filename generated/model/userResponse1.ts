@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { CreditDetail } from './creditDetail';
+import { User } from './user';
 
 
-export interface CreditDetailResponseAllOf { 
-    data?: Array<CreditDetail>;
+export interface UserResponse1 { 
+    data: User;
 }
 

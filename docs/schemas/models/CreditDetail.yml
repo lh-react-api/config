@@ -1,25 +1,32 @@
 title: CreditDetail
 type: object
 properties:
-  company:
+  cardId:
     type: string
-    description: カード会社
-    example: 'カード会社'
-  anderNumber:
+    description: stripeカードID
+    example: "card_1NCUmgKEEblCru1BYe8nyZKw"
+  brand:
     type: string
-    description: 下４桁
-    example: '下４桁'
-  ttl:
+    description: カード会社名
+    example: 'Visa'
+  cvcCheck:
+    $ref: ../enum/stripe/StripeCvcCheckEnum.yml
+  expMonth:
     type: string
-    description: 有効期限
-    example: '有効期限'
-  availability:
+    description: 有効期限(月)
+    example: '01'
+  expYear:
     type: string
-    description: 利用可否
-    example: '利用可否'
+    description: 有効期限(年)
+    example: '2023'
+  last4:
+    type: string
+    description: カード番号末尾4桁
+    example: '1234'
 required:
-  - type
-  - anderNumber
-  - ttl
-  - availability
-
+  - cardId
+  - brand
+  - cvcCheck
+  - expMonth
+  - expYear
+  - last4

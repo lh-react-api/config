@@ -9,40 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { AdminAuthority } from './adminAuthority';
 
 
 export interface AdminAuthorityResponse { 
-    /**
-     * 管理権限ID
-     */
-    id: number;
-    /**
-     * ユーザーID
-     */
-    userId: number;
-    /**
-     * 管理権限マスタID
-     */
-    roleId: number;
-    /**
-     * アクション(２進数で左からCRUDにする。0101みたいに)
-     */
-    action: number;
-    /**
-     * 作成日
-     */
-    createdAt: string;
-    /**
-     * 更新日
-     */
-    updatedAt: string;
-    /**
-     * 作成者
-     */
-    createdBy: number;
-    /**
-     * 更新者
-     */
-    updatedBy: number;
+    data: AdminAuthority;
 }
 

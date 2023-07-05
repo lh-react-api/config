@@ -1,6 +1,6 @@
 patch:
   tags:
-    - my
+    - my/address
   summary: デフォルト住所更新
   description: デフォルト住所更新
   requestBody:
@@ -12,7 +12,7 @@ patch:
           $ref: ../../../../requests/addresses/UpdateAddressIsDefaultRequest.yml
   responses:
     '200':
-      description: '200'
+      description: '正常応答'
       content:
         application/json:
           schema:

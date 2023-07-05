@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Role } from './role';
+import { Address } from './address';
 
 
-export interface RolesResponseAllOf { 
-    data?: Array<Role>;
+export interface AddressesResponse { 
+    data: Array<Address>;
 }
 

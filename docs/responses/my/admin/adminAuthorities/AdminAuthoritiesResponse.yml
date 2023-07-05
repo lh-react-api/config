@@ -1,4 +1,10 @@
 title: AdminAuthoritiesResponse
-type: array
-items:
-  $ref: ../../../../schemas/models/MyAdminAuthority.yml
+allOf:
+  - type: object
+    properties:
+      data:
+        type: array
+        items:
+          $ref: ../../../../schemas/models/MyAdminAuthority.yml
+required:
+  - data

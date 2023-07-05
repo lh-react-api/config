@@ -9,32 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { InquiryType } from './inquiryType';
 
 
 export interface InquiryTypeResponse { 
-    /**
-     * お問い合わせ種別ID
-     */
-    id: number;
-    /**
-     * お問い合わせ種別名
-     */
-    text: string;
-    /**
-     * 作成日
-     */
-    createdAt: string;
-    /**
-     * 更新日
-     */
-    updatedAt: string;
-    /**
-     * 作成者
-     */
-    createdBy: number;
-    /**
-     * 更新者
-     */
-    updatedBy: number;
+    data: InquiryType;
 }
 

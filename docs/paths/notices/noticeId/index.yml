@@ -7,8 +7,9 @@ get:
     - $ref: ../../../params/NoticeId.yml
   responses:
     '200':
-      description: '200'
+      description: '正常応答'
       content:
         application/json:
           schema:
-            $ref: ../../../schemas/models/Notice.yml
+            $ref: ../../../responses/notices/NoticeResponse.yml
+

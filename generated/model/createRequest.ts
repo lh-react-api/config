@@ -11,10 +11,26 @@
  */
 
 
-export interface AuthSignupResponseAllOf { 
+export interface CreateRequest { 
     /**
-     * トークン
+     * 商品ID
      */
-    token?: string;
+    product_id: number;
+    /**
+     * ユーザーID
+     */
+    userId: number;
+    /**
+     * タイトル
+     */
+    title: string;
+    /**
+     * レビュー内容
+     */
+    text: string;
+    /**
+     * 評価(10段階)
+     */
+    evaluation: number;
 }
 

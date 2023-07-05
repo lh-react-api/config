@@ -31,27 +31,27 @@ export interface ProductOrigin {
     /**
      * 商品情報
      */
-    information: string | null;
+    information?: string | null;
     /**
      * 商品情報
      */
-    coutionText: string | null;
+    cautionText?: string | null;
     /**
      * 商品サイズ
      */
-    size: string | null;
+    size?: string | null;
     /**
      * 商品重量
      */
-    weight: string | null;
+    weight?: string | null;
     /**
      * 発売日
      */
-    releaseDate: string | null;
+    releaseDate?: string | null;
     /**
      * 商品サムネイル画像
      */
-    thumbnail: string | null;
+    thumbnail?: string | null;
     /**
      * 作成日
      */

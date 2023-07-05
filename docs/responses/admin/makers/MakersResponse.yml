@@ -1,4 +1,4 @@
-title: DeliversResponse
+title: MakersResponse
 type: object
 allOf:
   - $ref: ../../../schemas/models/Pagination.yml

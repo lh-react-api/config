@@ -21,7 +21,7 @@ export interface Notice {
     /**
      * NoticeDivisionのラベル
      */
-    divisionLabel?: string;
+    divisionLabel: string;
     /**
      * タイトル
      */
@@ -33,11 +33,11 @@ export interface Notice {
     /**
      * 公開日
      */
-    noticeDate: string | null;
+    noticeDate?: string | null;
     /**
      * 終了日
      */
-    closeDate: string | null;
+    closeDate?: string | null;
     /**
      * 作成日
      */

@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { DeliverTime } from './deliverTime';
+import { ProductReview } from './productReview';
 
 
-export interface DeliverTimesResponseAllOf { 
-    data?: Array<DeliverTime>;
+export interface ProductReviewResponse { 
+    data: ProductReview;
 }
 

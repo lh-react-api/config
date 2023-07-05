@@ -1,4 +1,4 @@
-title: ProductOrigins
+title: ProductOriginsResponse
 type: object
 allOf:
   - $ref: ../../schemas/models/Pagination.yml
@@ -17,9 +17,13 @@ allOf:
                       - properties:
                           productType:
                             $ref: ../../schemas/models/ProductType.yml
+                        required:
+                          - productType
                       - properties:
                           productRank:
                             $ref: ../../schemas/models/ProductRank.yml
+                        required:
+                          - productRank
                 priceMinProduct:
                   $ref: ../../schemas/models/Product.yml
                 priceMaxProduct:
@@ -28,5 +32,9 @@ allOf:
                   $ref: ../../schemas/models/Maker.yml
                 genre:
                   $ref: ../../schemas/models/Genre.yml
+              required:
+                - products
+                - maker
+                - genre
 required:
   - data

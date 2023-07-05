@@ -1,4 +1,4 @@
-title: AddressesResponse
+title: NoticesResponse
 type: object
 allOf:
   - $ref: ../../schemas/models/Pagination.yml

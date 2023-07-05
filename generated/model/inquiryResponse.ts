@@ -9,45 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { InquiryStatusEnum } from './inquiryStatusEnum';
+import { Inquiry } from './inquiry';
 
 
 export interface InquiryResponse { 
-    /**
-     * お問い合わせID
-     */
-    id: number;
-    /**
-     * お問合せ種別ID
-     */
-    inquiryTypeId: number;
-    /**
-     * 連絡用メールアドレス
-     */
-    email: string;
-    /**
-     * お問い合わせ内容
-     */
-    text: string;
-    status: InquiryStatusEnum;
-    /**
-     * 作成日
-     */
-    createdAt: string;
-    /**
-     * 更新日
-     */
-    updatedAt: string;
-    /**
-     * 作成者
-     */
-    createdBy: number;
-    /**
-     * 更新者
-     */
-    updatedBy: number;
+    data: Inquiry;
 }
-export namespace InquiryResponse {
-}
-
 

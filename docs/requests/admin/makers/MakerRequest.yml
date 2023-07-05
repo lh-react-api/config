@@ -13,4 +13,3 @@ properties:
     example: "SONY"
 required:
   - name
-  - information
