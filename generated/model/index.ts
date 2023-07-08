@@ -83,7 +83,6 @@ export * from './rolesResponse';
 export * from './stripeClientSecretResponse';
 export * from './stripeClientSecretResponseAllOfData';
 export * from './stripeCvcCheckEnum';
-export * from './tokenCardRequest';
 export * from './updateAddressIsDefaultRequest';
 export * from './updateUserEmailRequest';
 export * from './updateUserPasswordRequest';
