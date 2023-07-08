@@ -30,7 +30,7 @@ export interface User {
      * パスワード再発行のトークン
      */
     emailReissueToken?: string | null;
-    social: UserSocialEnum;
+    social?: UserSocialEnum;
     /**
      * 管理者フラグ
      */
