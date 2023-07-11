@@ -1,9 +1,0 @@
-title: TokenCardRequest
-type: object
-properties:
-  token:
-    type: string
-    description: トークン化したカード情報
-    example: "tok_akjbrfabergbagbab;djsbkjba"
-required:
-  - token
