@@ -21,6 +21,7 @@ properties:
     description: パスワード再発行のトークン
     example: "XXXXXXXXXX"
   social:
+    nullable: true
     $ref: ../enum/users/UserSocialEnum.yml
   isAdmin:
     type: boolean
@@ -53,7 +54,6 @@ properties:
 required:
   - id
   - email
-  - social
   - isAdmin
   - status
   - statusLabel
