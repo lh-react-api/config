@@ -1,4 +1,4 @@
-title: OrderExecResponse
+title: OrderPaymentResponse
 type: object
 allOf:
   - properties:

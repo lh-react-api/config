@@ -9,8 +9,6 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { OrderRequestDemandInfo } from './orderRequestDemandInfo';
-import { OrderRequestDeliverInfo } from './orderRequestDeliverInfo';
 
 
 export interface OrderRequest { 
@@ -22,7 +20,13 @@ export interface OrderRequest {
      * stripeのカードID
      */
     stripCardId: string;
-    deliverInfo: OrderRequestDeliverInfo;
-    demand_info: OrderRequestDemandInfo;
+    /**
+     * 配達情報に設定する住所ID
+     */
+    deliverAddressId?: number;
+    /**
+     * 請求情報に設定する住所ID
+     */
+    demandAddressId: number;
 }
 

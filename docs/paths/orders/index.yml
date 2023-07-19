@@ -16,6 +16,6 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../../responses/orders/OrderExecResponse.yml
+            $ref: ../../responses/orders/OrderPaymentResponse.yml
 
 

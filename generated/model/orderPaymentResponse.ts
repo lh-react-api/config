@@ -9,14 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Demand } from './demand';
-import { Order } from './order';
-import { Deliver } from './deliver';
+import { OrderPaymentResponseAllOfData } from './orderPaymentResponseAllOfData';
 
 
-export interface OrderExecResponseAllOfData { 
-    order: Order;
-    deliver: Deliver;
-    demand: Demand;
+export interface OrderPaymentResponse { 
+    data: OrderPaymentResponseAllOfData;
 }
 
