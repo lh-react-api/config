@@ -3,6 +3,9 @@ get:
     - admin/notices
   summary: お知らせ情報一覧
   description: お知らせ情報の一覧取得
+  parameters:
+    - $ref: ../../../params/PageLimit.yml
+    - $ref: ../../../params/PageOffset.yml
   responses:
     '200':
       description: '正常応答'

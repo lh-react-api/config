@@ -4,6 +4,8 @@ get:
   summary: ジャンル一覧
   description: ジャンル一覧
   parameters:
+    - $ref: ../../params/PageLimit.yml
+    - $ref: ../../params/PageOffset.yml
     - in: query
       name: name_like
       description: 名前
