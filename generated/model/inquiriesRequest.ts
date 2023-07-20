@@ -11,7 +11,7 @@
  */
 
 
-export interface CreateRequest1 { 
+export interface InquiriesRequest { 
     /**
      * お問い合わせ種別ID
      */
