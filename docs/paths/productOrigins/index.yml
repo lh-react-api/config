@@ -4,6 +4,8 @@ post:
   summary: 商品原本一覧
   description: 商品原本一覧
   parameters:
+    - $ref: ../../params/PageLimit.yml
+    - $ref: ../../params/PageOffset.yml
     - in: query
       name: name_like
       description: 名前
