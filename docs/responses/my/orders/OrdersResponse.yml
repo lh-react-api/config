@@ -1,6 +1,6 @@
 title: OrdersResponse
-type: object
 allOf:
+  - $ref: ../../../schemas/models/Pagination.yml
   - properties:
       data:
         type: array
