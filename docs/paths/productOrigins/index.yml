@@ -1,4 +1,4 @@
-post:
+get:
   tags:
     - productOrigins
   summary: 商品原本一覧
