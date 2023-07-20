@@ -11,7 +11,7 @@
  */
 
 
-export interface CreateRequest { 
+export interface ProductReviewsRequest { 
     /**
      * 商品ID
      */

@@ -1,4 +1,4 @@
-title: CreateRequest
+title: ProductReviewsRequest
 type: object
 properties:
   product_id:

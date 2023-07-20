@@ -1,4 +1,4 @@
-title: CreateRequest
+title: InquiriesRequest
 type: object
 properties:
   inquiry_type_id:
