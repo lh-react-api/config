@@ -21,13 +21,25 @@ export interface Demand {
      */
     orderId: number;
     /**
-     * 氏名
+     * ユーザーID
      */
-    name: string;
+    userId: number;
     /**
-     * 氏名（かな）
+     * 苗字
      */
-    nameKana: string;
+    lastName: string;
+    /**
+     * 苗字（かな）
+     */
+    lastNameKana: string;
+    /**
+     * 名前
+     */
+    firstName: string;
+    /**
+     * 名前（かな）
+     */
+    firstNameKana: string;
     /**
      * 郵便番号
      */

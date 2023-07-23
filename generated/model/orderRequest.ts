@@ -23,7 +23,11 @@ export interface OrderRequest {
     /**
      * 配達情報に設定する住所ID
      */
-    deliverAddressId?: number;
+    deliverAddressId: number;
+    /**
+     * 配達情報に設定する配達時間ID
+     */
+    deliverTimeId: number;
     /**
      * 請求情報に設定する住所ID
      */

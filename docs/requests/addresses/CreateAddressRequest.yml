@@ -52,6 +52,11 @@ properties:
     description: 建物名・部屋番号
     maxLength: 128
     example: '北沢タウンホール内'
+  phoneNumber:
+    type: string
+    description: 電話番号
+    maxLength: 32
+    example: "090-9999-9999"
 
 required:
   - userId
@@ -63,3 +68,4 @@ required:
   - prefectureName
   - city
   - block
+  - phoneNumber

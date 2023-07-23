@@ -13,43 +13,57 @@ properties:
     type: integer
     description: 配達時間ID
     example: 1
-  name:
+  userId:
+    type: integer
+    description: ユーザーID
+    example: 1
+  lastName:
     type: string
     maxLength: 128
-    description: 氏名
-    example: "山田太郎"
-  nameKana:
+    description: 苗字
+    example: '伊地'
+  lastNameKana:
     type: string
-    description: 氏名（かな）
+    description: 苗字（かな）
     maxLength: 128
-    example: "やまだたろう"
+    example: 'いじち'
+  firstName:
+    type: string
+    description: 名前
+    maxLength: 128
+    example: '知虹夏'
+  firstNameKana:
+    type: string
+    description: 名前（かな）
+    maxLength: 128
+    example: 'にじか'
   postNumber:
     type: string
     description: 郵便番号
     minLength: 7
     maxLength: 7
-    example: "1558666"
+    example: '1558666'
   prefectureName:
     type: string
     description: 都道府県
     maxLength: 8
-    example: "東京都"
+    example: '東京都'
   city:
     type: string
     description: 市区町村
-    maxLength: 24
-    example: "世田谷区"
+    maxLength: 32
+    example: '世田谷区'
   block:
     type: string
     description: 番地
-    maxLength: 32
-    example: "北沢2-8-18"
+    maxLength: 24
+    example: '北沢2-8-18'
   building:
     type: string
     nullable: true
     description: 建物名・部屋番号
     maxLength: 128
-    example: "北沢タウンホール内"
+    example: '北沢タウンホール内'
   phoneNumber:
     type: string
     description: 電話番号
@@ -82,8 +96,11 @@ required:
   - id
   - orderId
   - deliverTimeId
-  - name
-  - nameKana
+  - userId
+  - lastName
+  - lastNameKana
+  - firstName
+  - firstNameKana
   - postNumber
   - prefectureName
   - city

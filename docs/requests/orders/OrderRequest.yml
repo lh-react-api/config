@@ -13,6 +13,10 @@ properties:
     type: integer
     description: 配達情報に設定する住所ID
     example: 1
+  deliverTimeId:
+    type: integer
+    description: 配達情報に設定する配達時間ID
+    example: 1
   demandAddressId:
     type: integer
     description: 請求情報に設定する住所ID
@@ -21,5 +25,6 @@ properties:
 required:
   - productId
   - stripCardId
-  - deliverAdressId
+  - deliverAddressId
+  - deliverTimeId
   - demandAddressId
