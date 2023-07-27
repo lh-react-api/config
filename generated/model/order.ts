@@ -10,6 +10,7 @@
  * Do not edit the class manually.
  */
 import { OrderProgressEnum } from './orderProgressEnum';
+import { SettlementStateEnum } from './settlementStateEnum';
 
 
 export interface Order { 
@@ -33,11 +34,20 @@ export interface Order {
     /**
      * 発送追跡番号
      */
-    sentTrackingNumber: string;
+    sentTrackingNumber?: string | null;
     /**
      * 返送追跡番号
      */
-    returnTrackingNumber: string;
+    returnTrackingNumber?: string | null;
+    settlementState: SettlementStateEnum;
+    /**
+     * settlementState
+     */
+    settlementStateLabel: string;
+    /**
+     * stripeサブスクリプションID
+     */
+    subscriptionId: string;
     /**
      * 作成日
      */

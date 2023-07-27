@@ -1,0 +1,30 @@
+title: OrderRequest
+type: object
+properties:
+  productId:
+    type: integer
+    description: 商品ID
+    example: 1
+  stripCardId:
+    type: string
+    description: stripeのカードID
+    example: card_1NRhACDTj4HgVUnihBDjJRsk
+  deliverAddressId:
+    type: integer
+    description: 配達情報に設定する住所ID
+    example: 1
+  deliverTimeId:
+    type: integer
+    description: 配達情報に設定する配達時間ID
+    example: 1
+  demandAddressId:
+    type: integer
+    description: 請求情報に設定する住所ID
+    example: 1
+
+required:
+  - productId
+  - stripCardId
+  - deliverAddressId
+  - deliverTimeId
+  - demandAddressId

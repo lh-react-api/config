@@ -23,12 +23,25 @@ properties:
     type: string
     description: 発送追跡番号
     maxLength: 128
+    nullable: true
     example: "XXXXXXXXXXXXXXX"
   returnTrackingNumber:
     type: string
     description: 返送追跡番号
     maxLength: 128
+    nullable: true
     example: "ZZZZZZZZZZZZZZZ"
+  settlementState:
+    $ref: ../enum/orders/SettlementStateEnum.yml
+  settlementStateLabel:
+    type: string
+    description: settlementState
+    example: "処理中"
+  subscriptionId:
+    type: string
+    description: stripeサブスクリプションID
+    maxLength: 128
+    example: "sub_XXXXX-YYYYY-ZZZZZ"
   createdAt:
     type: string
     format: date-time
@@ -53,8 +66,9 @@ required:
   - userId
   - progress
   - progressLabel
-  - sentTrackingNumber
-  - returnTrackingNumber
+  - settlementState
+  - settlementStateLabel
+  - subscriptionId
   - createdAt
   - updatedAt
   - createdBy
