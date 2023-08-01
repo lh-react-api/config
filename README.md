@@ -30,3 +30,10 @@ php artisan ide-helper:model --nowrite
 php artisan migrate:fresh
 php artisan migrate:fresh --seed
 ```
+
+## 「Failed to get D-Bus connection: No such file or directory」が出る場合
+
+Docker Desktop for Macで `Failed to get D-Bus connection: No such file or directory` 
+と表示される場合は別途設定が必要
+
+[参考](https://ufirst.jp/memo/2023/01/docker-desktop-for-mac-%E3%81%A7-%E3%80%8Cfailed-to-get-d-bus-connection-no-such-file-or-directory%E3%80%8D%E3%82%A8%E3%83%A9%E3%83%BC/)
