@@ -31,7 +31,7 @@ php artisan migrate:fresh
 php artisan migrate:fresh --seed
 ```
 
-## 「Failed to get D-Bus connection: No such file or directory」が出る場合
+## make init時「Failed to get D-Bus connection: No such file or directory」が出る場合
 
 Docker Desktop for Macで `Failed to get D-Bus connection: No such file or directory` 
 と表示される場合は別途設定が必要
