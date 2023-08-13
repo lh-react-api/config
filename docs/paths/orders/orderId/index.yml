@@ -12,4 +12,14 @@ get:
         application/json:
           schema:
             $ref: ../../../responses/orders/OrderResponse.yml
-
+delete:
+  tags:
+    - orders
+  summary: サブスク停止
+  description: 契約中のサブスクを停止する
+  parameters:
+    - $ref: '../../../params/OrderId.yml'
+  responses:
+    '200':
+      description: '正常応答'
+      content: null

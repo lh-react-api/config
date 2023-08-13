@@ -41,6 +41,8 @@ paths:
     $ref: ./paths/my/stripe/clientSecret.yml
   /my/credits:
     $ref: ./paths/my/credits/index.yml
+  /my/credits/creditId:
+    $ref: ./paths/my/credits/creditId/index.yml
 
   # 住所
   /addresses:
