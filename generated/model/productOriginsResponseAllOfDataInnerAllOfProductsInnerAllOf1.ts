@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Order } from './order';
+import { ProductRank } from './productRank';
 
 
-export interface OrdersResponse { 
-    data: Array<Order>;
+export interface ProductOriginsResponseAllOfDataInnerAllOfProductsInnerAllOf1 { 
+    productRank: ProductRank;
 }
 

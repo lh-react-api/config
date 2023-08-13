@@ -9,10 +9,15 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Order } from './order';
 
 
-export interface OrdersResponse { 
-    data: Array<Order>;
-}
+/**
+ * 決済状態<br> SUCCESS:成功<br> FAILED:失敗<br>
+ */
+export type PaymentSettlementStateEnum = 'SUCCESS' | 'FAILED';
+
+export const PaymentSettlementStateEnum = {
+    SUCCESS: 'SUCCESS' as PaymentSettlementStateEnum,
+    FAILED: 'FAILED' as PaymentSettlementStateEnum
+};
 

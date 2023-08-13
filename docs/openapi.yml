@@ -179,6 +179,8 @@ components:
       $ref: ./schemas/models/ProductReview.yml
     ProductType:
       $ref: ./schemas/models/ProductType.yml
+    Payment:
+      $ref: ./schemas/models/Payment.yml
     Role:
       $ref: ./schemas/models/Role.yml
     Pagenation:

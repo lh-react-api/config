@@ -9,10 +9,15 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Order } from './order';
 
 
-export interface OrdersResponse { 
-    data: Array<Order>;
-}
+/**
+ * 状態<br> ENABLE:有効<br> DISABLE:無効<br>
+ */
+export type CreditsStatusEnum = 'ENABLE' | 'DISABLE';
+
+export const CreditsStatusEnum = {
+    ENABLE: 'ENABLE' as CreditsStatusEnum,
+    DISABLE: 'DISABLE' as CreditsStatusEnum
+};
 

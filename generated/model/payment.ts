@@ -9,23 +9,19 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { CreditsStatusEnum } from './creditsStatusEnum';
+import { PaymentSettlementStateEnum } from './paymentSettlementStateEnum';
 
 
-export interface Credit { 
+export interface Payment { 
     /**
-     * クレジットカード情報ID
+     * 決済ID
      */
     id: number;
     /**
-     * ユーザーID
+     * 注文情報ID
      */
-    userId: number;
-    /**
-     * 決済情報
-     */
-    paymentsSource: string;
-    status: CreditsStatusEnum;
+    orderId: number;
+    settlementState: PaymentSettlementStateEnum;
     /**
      * 作成日
      */
@@ -43,7 +39,7 @@ export interface Credit {
      */
     updatedBy: number;
 }
-export namespace Credit {
+export namespace Payment {
 }
 
 

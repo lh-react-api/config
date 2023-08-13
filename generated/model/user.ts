@@ -41,6 +41,10 @@ export interface User {
      */
     statusLabel: string;
     /**
+     * stripe顧客ID
+     */
+    stripeCustomerId: string;
+    /**
      * 作成日
      */
     createdAt: string;

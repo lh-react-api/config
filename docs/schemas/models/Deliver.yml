@@ -13,10 +13,6 @@ properties:
     type: integer
     description: 配達時間ID
     example: 1
-  userId:
-    type: integer
-    description: ユーザーID
-    example: 1
   lastName:
     type: string
     maxLength: 128
@@ -96,7 +92,6 @@ required:
   - id
   - orderId
   - deliverTimeId
-  - userId
   - lastName
   - lastNameKana
   - firstName

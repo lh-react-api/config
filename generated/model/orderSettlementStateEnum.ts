@@ -14,11 +14,11 @@
 /**
  * 決済状態<br> PROCESSING:処理中<br> SUCCESS:成功<br> FAILED:失敗<br>
  */
-export type SettlementStateEnum = 'PROCESSING' | 'SUCCESS' | 'FAILED';
+export type OrderSettlementStateEnum = 'PROCESSING' | 'SUCCESS' | 'FAILED';
 
-export const SettlementStateEnum = {
-    PROCESSING: 'PROCESSING' as SettlementStateEnum,
-    SUCCESS: 'SUCCESS' as SettlementStateEnum,
-    FAILED: 'FAILED' as SettlementStateEnum
+export const OrderSettlementStateEnum = {
+    PROCESSING: 'PROCESSING' as OrderSettlementStateEnum,
+    SUCCESS: 'SUCCESS' as OrderSettlementStateEnum,
+    FAILED: 'FAILED' as OrderSettlementStateEnum
 };
 
