@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { OrderSettlementStateEnum } from './orderSettlementStateEnum';
 import { OrderProgressEnum } from './orderProgressEnum';
-import { SettlementStateEnum } from './settlementStateEnum';
 
 
 export interface Order { 
@@ -39,7 +39,7 @@ export interface Order {
      * 返送追跡番号
      */
     returnTrackingNumber?: string | null;
-    settlementState: SettlementStateEnum;
+    settlementState: OrderSettlementStateEnum;
     /**
      * settlementState
      */

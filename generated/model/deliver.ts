@@ -25,10 +25,6 @@ export interface Deliver {
      */
     deliverTimeId: number;
     /**
-     * ユーザーID
-     */
-    userId: number;
-    /**
      * 苗字
      */
     lastName: string;

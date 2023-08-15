@@ -33,6 +33,10 @@ properties:
     type: string
     description: ステータスのラベル
     example: '退会'
+  stripeCustomerId:
+    type: string
+    description: stripe顧客ID
+    example: 'cus_OLtoiQItILazls'
   createdAt:
     type: string
     format: date-time
@@ -57,6 +61,7 @@ required:
   - isAdmin
   - status
   - statusLabel
+  - stripeCustomerId
   - createdAt
   - updatedAt
   - createdBy

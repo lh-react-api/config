@@ -21,10 +21,6 @@ export interface Demand {
      */
     orderId: number;
     /**
-     * ユーザーID
-     */
-    userId: number;
-    /**
      * 苗字
      */
     lastName: string;

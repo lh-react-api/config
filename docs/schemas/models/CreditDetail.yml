@@ -4,7 +4,7 @@ properties:
   cardId:
     type: string
     description: stripeカードID
-    example: "card_1NCUmgKEEblCru1BYe8nyZKw"
+    example: "pm_1NaITLDTj4HgVUniNzD9Xzgn"
   brand:
     type: string
     description: カード会社名

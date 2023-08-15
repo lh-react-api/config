@@ -32,7 +32,7 @@ properties:
     nullable: true
     example: "ZZZZZZZZZZZZZZZ"
   settlementState:
-    $ref: ../enum/orders/SettlementStateEnum.yml
+    $ref: ../enum/orders/OrderSettlementStateEnum.yml
   settlementStateLabel:
     type: string
     description: settlementState

@@ -9,10 +9,6 @@ properties:
     type: integer
     description: 注文ID
     example: 1
-  userId:
-    type: integer
-    description: ユーザーID
-    example: 1
   lastName:
     type: string
     maxLength: 128
@@ -91,7 +87,6 @@ properties:
 required:
   - id
   - orderId
-  - userId
   - lastName
   - lastNameKana
   - firstName

@@ -1,0 +1,11 @@
+delete:
+  tags:
+    - my/credits
+  summary: クレジットカード無効化
+  description: ユーザー自身の登録済みカードを無効化する
+  parameters:
+    - $ref: '../../../../params/CreditId.yml'
+  responses:
+    '200':
+      description: '正常応答'
+      content: null

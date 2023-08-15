@@ -1,20 +1,16 @@
-title: Credit
+title: Payment
 type: object
 properties:
   id:
     type: integer
-    description: クレジットカード情報ID
+    description: 決済ID
     example: 1
-  userId:
+  orderId:
     type: integer
-    description: ユーザーID
+    description: 注文情報ID
     example: 1
-  paymentsSource:
-    type: string
-    description: 決済情報
-    example: "pm_1NaITLDTj4HgVUniNzD9Xzgn"
-  status:
-    $ref: ../enum/credits/CreditsStatusEnum.yml
+  settlementState:
+    $ref: ../enum/payments/PaymentSettlementStateEnum.yml
   createdAt:
     type: string
     format: date-time
@@ -33,15 +29,11 @@ properties:
     type: integer
     description: 更新者
     example: 1
-
 required:
   - id
-  - userId
-  - paymentsSource
-  - status
-  - detail
+  - orderId
+  - settlementState
   - createdAt
   - updatedAt
   - createdBy
   - updatedBy
-

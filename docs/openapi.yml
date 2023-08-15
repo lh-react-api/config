@@ -41,6 +41,8 @@ paths:
     $ref: ./paths/my/stripe/clientSecret.yml
   /my/credits:
     $ref: ./paths/my/credits/index.yml
+  /my/credits/{creditId}:
+    $ref: ./paths/my/credits/creditId/index.yml
 
   # 住所
   /addresses:
@@ -179,6 +181,8 @@ components:
       $ref: ./schemas/models/ProductReview.yml
     ProductType:
       $ref: ./schemas/models/ProductType.yml
+    Payment:
+      $ref: ./schemas/models/Payment.yml
     Role:
       $ref: ./schemas/models/Role.yml
     Pagenation:
