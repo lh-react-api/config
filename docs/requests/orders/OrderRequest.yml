@@ -5,10 +5,10 @@ properties:
     type: integer
     description: 商品ID
     example: 1
-  stripCardId:
-    type: string
-    description: stripeのカードID
-    example: card_1NRhACDTj4HgVUnihBDjJRsk
+  creditId:
+    type: integer
+    description: クレジットカード情報ID
+    example: 1
   deliverAddressId:
     type: integer
     description: 配達情報に設定する住所ID
@@ -24,7 +24,7 @@ properties:
 
 required:
   - productId
-  - stripCardId
+  - creditId
   - deliverAddressId
   - deliverTimeId
   - demandAddressId

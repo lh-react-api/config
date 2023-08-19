@@ -17,9 +17,9 @@ export interface OrderRequest {
      */
     productId: number;
     /**
-     * stripeのカードID
+     * クレジットカード情報ID
      */
-    stripCardId: string;
+    creditId: number;
     /**
      * 配達情報に設定する住所ID
      */
