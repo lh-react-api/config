@@ -15,6 +15,24 @@ properties:
     example: "pm_1NaITLDTj4HgVUniNzD9Xzgn"
   status:
     $ref: ../enum/credits/CreditsStatusEnum.yml
+  brand:
+    type: string
+    description: カード会社名
+    example: 'Visa'
+  cvcCheck:
+    $ref: ../enum/stripe/StripeCvcCheckEnum.yml
+  expMonth:
+    type: string
+    description: 有効期限(月)
+    example: '01'
+  expYear:
+    type: string
+    description: 有効期限(年)
+    example: '2023'
+  last4:
+    type: string
+    description: カード番号末尾4桁
+    example: '1234'
   createdAt:
     type: string
     format: date-time
@@ -39,7 +57,11 @@ required:
   - userId
   - paymentsSource
   - status
-  - detail
+  - brand
+  - cvcCheck
+  - expMonth
+  - expYear
+  - last4
   - createdAt
   - updatedAt
   - createdBy

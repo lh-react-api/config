@@ -9,6 +9,10 @@ properties:
     type: integer
     description: 注文情報ID
     example: 1
+  creditId:
+    type: integer
+    description: クレジットカード情報ID
+    example: 1
   settlementState:
     $ref: ../enum/payments/PaymentSettlementStateEnum.yml
   createdAt:
@@ -32,6 +36,7 @@ properties:
 required:
   - id
   - orderId
+  - creditId
   - settlementState
   - createdAt
   - updatedAt

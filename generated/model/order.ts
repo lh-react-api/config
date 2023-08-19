@@ -26,6 +26,10 @@ export interface Order {
      * ユーザーID
      */
     userId: number;
+    /**
+     * クレジットカード情報ID
+     */
+    creditId: number;
     progress: OrderProgressEnum;
     /**
      * progressのラベル

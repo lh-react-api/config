@@ -13,6 +13,10 @@ properties:
     type: integer
     description: ユーザーID
     example: 1
+  creditId:
+    type: integer
+    description: クレジットカード情報ID
+    example: 1
   progress:
     $ref: ../enum/orders/OrderProgressEnum.yml
   progressLabel:
@@ -64,6 +68,7 @@ required:
   - id
   - productId
   - userId
+  - creditId
   - progress
   - progressLabel
   - settlementState
