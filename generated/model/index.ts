@@ -14,7 +14,6 @@ export * from './authSignupRequest';
 export * from './authSignupResponse';
 export * from './createAddressRequest';
 export * from './credit';
-export * from './creditDetail';
 export * from './creditDetailResponse';
 export * from './creditsStatusEnum';
 export * from './deliver';

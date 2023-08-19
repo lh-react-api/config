@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { CreditDetail } from './creditDetail';
+import { Credit } from './credit';
 
 
 export interface CreditDetailResponse { 
-    data: Array<CreditDetail>;
+    data: Array<Credit>;
 }
 
