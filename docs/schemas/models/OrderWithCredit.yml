@@ -1,0 +1,83 @@
+title: OrderWithCredit
+type: object
+properties:
+  id:
+    type: integer
+    description: 注文情報ID
+    example: 1
+  productId:
+    type: integer
+    description: 商品ID
+    example: 1
+  userId:
+    type: integer
+    description: ユーザーID
+    example: 1
+  creditId:
+    type: integer
+    description: クレジットカード情報ID
+    example: 1
+  progress:
+    $ref: ../enum/orders/OrderProgressEnum.yml
+  progressLabel:
+    type: string
+    description: progressのラベル
+    example: "未処理"
+  sentTrackingNumber:
+    type: string
+    description: 発送追跡番号
+    maxLength: 128
+    nullable: true
+    example: "XXXXXXXXXXXXXXX"
+  returnTrackingNumber:
+    type: string
+    description: 返送追跡番号
+    maxLength: 128
+    nullable: true
+    example: "ZZZZZZZZZZZZZZZ"
+  settlementState:
+    $ref: ../enum/orders/OrderSettlementStateEnum.yml
+  settlementStateLabel:
+    type: string
+    description: settlementState
+    example: "処理中"
+  subscriptionId:
+    type: string
+    description: stripeサブスクリプションID
+    maxLength: 128
+    example: "sub_XXXXX-YYYYY-ZZZZZ"
+  creditCard:
+    $ref: ../models/Credit.yml
+  createdAt:
+    type: string
+    format: date-time
+    description: 作成日
+    example: "2023-03-14 19:32:41"
+  updatedAt:
+    type: string
+    format: date-time
+    description: 更新日
+    example: "2023-03-15 18:03:09"
+  createdBy:
+    type: integer
+    description: 作成者
+    example: 1
+  updatedBy:
+    type: integer
+    description: 更新者
+    example: 1
+required:
+  - id
+  - productId
+  - userId
+  - creditId
+  - progress
+  - progressLabel
+  - settlementState
+  - settlementStateLabel
+  - subscriptionId
+  - creditCard
+  - createdAt
+  - updatedAt
+  - createdBy
+  - updatedBy

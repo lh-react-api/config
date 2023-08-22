@@ -10,12 +10,12 @@
  * Do not edit the class manually.
  */
 import { Demand } from './demand';
-import { Order } from './order';
 import { Deliver } from './deliver';
+import { OrderWithCredit } from './orderWithCredit';
 
 
 export interface OrderPaymentResponseAllOfData { 
-    order: Order;
+    order: OrderWithCredit;
     deliver: Deliver;
     demand: Demand;
 }

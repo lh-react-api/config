@@ -59,6 +59,7 @@ export * from './orderProgressEnum';
 export * from './orderRequest';
 export * from './orderResponse';
 export * from './orderSettlementStateEnum';
+export * from './orderWithCredit';
 export * from './ordersResponse';
 export * from './pagenation';
 export * from './pagination';
