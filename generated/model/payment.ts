@@ -21,6 +21,10 @@ export interface Payment {
      * 注文情報ID
      */
     orderId: number;
+    /**
+     * クレジットカード情報ID
+     */
+    creditId: number;
     settlementState: PaymentSettlementStateEnum;
     /**
      * 作成日

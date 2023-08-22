@@ -1,4 +1,4 @@
-title: Order
+title: OrderWithCredit
 type: object
 properties:
   id:
@@ -46,6 +46,8 @@ properties:
     description: stripeサブスクリプションID
     maxLength: 128
     example: "sub_XXXXX-YYYYY-ZZZZZ"
+  creditCard:
+    $ref: ../models/Credit.yml
   createdAt:
     type: string
     format: date-time
@@ -74,6 +76,7 @@ required:
   - settlementState
   - settlementStateLabel
   - subscriptionId
+  - creditCard
   - createdAt
   - updatedAt
   - createdBy

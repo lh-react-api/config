@@ -5,10 +5,10 @@ allOf:
       data:
         properties:
           order:
-            $ref: ../../schemas/models/Order.yml
+            $ref: ../../schemas/models/OrderWithCredit.yml
           deliver:
             $ref: ../../schemas/models/Deliver.yml
-          demand: 
+          demand:
             $ref: ../../schemas/models/Demand.yml
         required:
           - order

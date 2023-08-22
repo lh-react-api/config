@@ -145,8 +145,6 @@ components:
       $ref: ./schemas/models/Address.yml
     Credit:
       $ref: ./schemas/models/Credit.yml
-    CreditDetail:
-      $ref: ./schemas/models/CreditDetail.yml
     AdminAuthority:
       $ref: ./schemas/models/AdminAuthority.yml
     MyAdminAuthority:
