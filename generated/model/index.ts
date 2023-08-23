@@ -92,6 +92,7 @@ export * from './stripeClientSecretResponse';
 export * from './stripeClientSecretResponseAllOfData';
 export * from './stripeCvcCheckEnum';
 export * from './updateAddressIsDefaultRequest';
+export * from './updateCreditRequest';
 export * from './updateUserEmailRequest';
 export * from './updateUserPasswordRequest';
 export * from './user';
