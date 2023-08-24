@@ -1,0 +1,9 @@
+title: OrderResponse
+type: object
+allOf:
+  - properties:
+      data:
+        type: object
+        $ref: ../../schemas/models/Order.yml
+required:
+  - data

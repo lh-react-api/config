@@ -1,0 +1,21 @@
+post:
+  tags:
+    - orders
+  summary: 決済実行
+  description: リクエスト情報に基づいてstripeにサブスク登録を行う
+  requestBody:
+    description: 登録する管理者権限情報
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../requests/orders/OrderRequest.yml'
+  responses:
+    '200':
+      description: '正常応答'
+      content:
+        application/json:
+          schema:
+            $ref: ../../responses/orders/OrderPaymentResponse.yml
+
+

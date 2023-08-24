@@ -41,6 +41,8 @@ paths:
     $ref: ./paths/my/stripe/clientSecret.yml
   /my/credits:
     $ref: ./paths/my/credits/index.yml
+  /my/credits/{creditId}:
+    $ref: ./paths/my/credits/creditId/index.yml
 
   # 住所
   /addresses:
@@ -79,7 +81,11 @@ paths:
   # おすすめ商品
   /recommendProducts:
     $ref: ./paths/recommendProducts/index.yml
-
+  # 注文
+  /orders:
+    $ref: ./paths/orders/index.yml
+  /orders/{orderId}:
+    $ref: ./paths/orders/orderId/index.yml
 
   # 管理API群
   # ログインユーザー関連
@@ -139,8 +145,6 @@ components:
       $ref: ./schemas/models/Address.yml
     Credit:
       $ref: ./schemas/models/Credit.yml
-    CreditDetail:
-      $ref: ./schemas/models/CreditDetail.yml
     AdminAuthority:
       $ref: ./schemas/models/AdminAuthority.yml
     MyAdminAuthority:
@@ -175,6 +179,8 @@ components:
       $ref: ./schemas/models/ProductReview.yml
     ProductType:
       $ref: ./schemas/models/ProductType.yml
+    Payment:
+      $ref: ./schemas/models/Payment.yml
     Role:
       $ref: ./schemas/models/Role.yml
     Pagenation:

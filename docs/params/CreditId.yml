@@ -1,0 +1,8 @@
+in: path
+name: creditId
+description: クレジットカード情報ID
+required: true
+schema:
+  type: integer
+  description: クレジットカード情報ID
+  example: 1

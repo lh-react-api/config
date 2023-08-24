@@ -57,6 +57,10 @@ export interface Address {
      */
     building?: string | null;
     /**
+     * 電話番号
+     */
+    phoneNumber: string;
+    /**
      * デフォルトフラグ
      */
     isDefault: boolean;

@@ -9,10 +9,15 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Credit } from './credit';
 
 
-export interface CreditDetailResponse { 
-    data: Array<Credit>;
-}
+/**
+ * 状態<br> ENABLE:有効<br> DISABLE:無効<br>
+ */
+export type CreditsStatusEnum = 'ENABLE' | 'DISABLE';
+
+export const CreditsStatusEnum = {
+    ENABLE: 'ENABLE' as CreditsStatusEnum,
+    DISABLE: 'DISABLE' as CreditsStatusEnum
+};
 

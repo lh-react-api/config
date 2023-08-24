@@ -1,0 +1,10 @@
+title: PaymentSettlementStateEnum
+type: string
+description:  
+  決済状態<br>
+  SUCCESS:成功<br>
+  FAILED:失敗<br>
+enum:
+  - SUCCESS
+  - FAILED
+example: SUCCESS

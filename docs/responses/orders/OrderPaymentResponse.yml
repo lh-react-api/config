@@ -1,0 +1,18 @@
+title: OrderPaymentResponse
+type: object
+allOf:
+  - properties:
+      data:
+        properties:
+          order:
+            $ref: ../../schemas/models/OrderWithCredit.yml
+          deliver:
+            $ref: ../../schemas/models/Deliver.yml
+          demand:
+            $ref: ../../schemas/models/Demand.yml
+        required:
+          - order
+          - deliver
+          - demand
+required:
+  - data

@@ -9,13 +9,30 @@ properties:
     type: integer
     description: ユーザーID
     example: 1
-  stripeCustomerId:
+  paymentsSource:
     type: string
-    description: stripe顧客ID
-    maxLength: 128
-    example: XXXXX003
-  detail:
-    $ref: ./CreditDetail.yml
+    description: 決済情報
+    example: "pm_1NaITLDTj4HgVUniNzD9Xzgn"
+  status:
+    $ref: ../enum/credits/CreditsStatusEnum.yml
+  brand:
+    type: string
+    description: カード会社名
+    example: 'Visa'
+  cvcCheck:
+    $ref: ../enum/stripe/StripeCvcCheckEnum.yml
+  expMonth:
+    type: string
+    description: 有効期限(月)
+    example: '01'
+  expYear:
+    type: string
+    description: 有効期限(年)
+    example: '2023'
+  last4:
+    type: string
+    description: カード番号末尾4桁
+    example: '1234'
   createdAt:
     type: string
     format: date-time
@@ -38,8 +55,13 @@ properties:
 required:
   - id
   - userId
-  - stripeCustomerId
-  - detail
+  - paymentsSource
+  - status
+  - brand
+  - cvcCheck
+  - expMonth
+  - expYear
+  - last4
   - createdAt
   - updatedAt
   - createdBy

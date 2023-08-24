@@ -9,7 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { CreditDetail } from './creditDetail';
+import { CreditsStatusEnum } from './creditsStatusEnum';
+import { StripeCvcCheckEnum } from './stripeCvcCheckEnum';
 
 
 export interface Credit { 
@@ -22,10 +23,27 @@ export interface Credit {
      */
     userId: number;
     /**
-     * stripe顧客ID
+     * 決済情報
      */
-    stripeCustomerId: string;
-    detail: CreditDetail;
+    paymentsSource: string;
+    status: CreditsStatusEnum;
+    /**
+     * カード会社名
+     */
+    brand: string;
+    cvcCheck: StripeCvcCheckEnum;
+    /**
+     * 有効期限(月)
+     */
+    expMonth: string;
+    /**
+     * 有効期限(年)
+     */
+    expYear: string;
+    /**
+     * カード番号末尾4桁
+     */
+    last4: string;
     /**
      * 作成日
      */
@@ -43,4 +61,7 @@ export interface Credit {
      */
     updatedBy: number;
 }
+export namespace Credit {
+}
+
 

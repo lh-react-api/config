@@ -10,10 +10,11 @@
  * Do not edit the class manually.
  */
 import { OrderSettlementStateEnum } from './orderSettlementStateEnum';
+import { Credit } from './credit';
 import { OrderProgressEnum } from './orderProgressEnum';
 
 
-export interface Order { 
+export interface OrderWithCredit { 
     /**
      * 注文情報ID
      */
@@ -52,6 +53,7 @@ export interface Order {
      * stripeサブスクリプションID
      */
     subscriptionId: string;
+    creditCard: Credit;
     /**
      * 作成日
      */
@@ -69,7 +71,7 @@ export interface Order {
      */
     updatedBy: number;
 }
-export namespace Order {
+export namespace OrderWithCredit {
 }
 
 

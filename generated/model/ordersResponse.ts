@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { Order } from './order';
+import { OrderWithCredit } from './orderWithCredit';
 
 
 export interface OrdersResponse { 
@@ -53,6 +53,6 @@ export interface OrdersResponse {
      * 検索ヒット数
      */
     total: number;
-    data: Array<Order>;
+    data: Array<OrderWithCredit>;
 }
 
