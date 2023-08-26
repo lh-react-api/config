@@ -15,6 +15,7 @@ export * from './authSignupResponse';
 export * from './createAddressRequest';
 export * from './credit';
 export * from './creditDetailResponse';
+export * from './creditsBrandEnum';
 export * from './creditsStatusEnum';
 export * from './deliver';
 export * from './deliverRequest';
