@@ -86,6 +86,8 @@ paths:
     $ref: ./paths/orders/index.yml
   /orders/{orderId}:
     $ref: ./paths/orders/orderId/index.yml
+  /orders/{orderId}/credit:
+    $ref: ./paths/orders/orderId/credit/index.yml
 
   # 管理API群
   # ログインユーザー関連

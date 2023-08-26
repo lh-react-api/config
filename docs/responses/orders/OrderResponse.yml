@@ -4,6 +4,6 @@ allOf:
   - properties:
       data:
         type: object
-        $ref: ../../schemas/models/Order.yml
+        $ref: ../../schemas/models/OrderWithCredit.yml
 required:
   - data

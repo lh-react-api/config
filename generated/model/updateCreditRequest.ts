@@ -9,10 +9,12 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { OrderWithCredit } from './orderWithCredit';
 
 
-export interface OrderResponse { 
-    data: OrderWithCredit;
+export interface UpdateCreditRequest { 
+    /**
+     * クレジットカード情報ID
+     */
+    creditId: number;
 }
 
