@@ -10,6 +10,7 @@
  * Do not edit the class manually.
  */
 import { CreditsStatusEnum } from './creditsStatusEnum';
+import { CreditsBrandEnum } from './creditsBrandEnum';
 import { StripeCvcCheckEnum } from './stripeCvcCheckEnum';
 
 
@@ -27,10 +28,7 @@ export interface Credit {
      */
     paymentsSource: string;
     status: CreditsStatusEnum;
-    /**
-     * カード会社名
-     */
-    brand: string;
+    brand: CreditsBrandEnum;
     cvcCheck: StripeCvcCheckEnum;
     /**
      * 有効期限(月)
