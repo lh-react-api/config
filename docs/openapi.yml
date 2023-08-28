@@ -58,7 +58,8 @@ paths:
   # 商品原本検索
   /productOrigins:
     $ref: ./paths/productOrigins/index.yml
-
+  /productOrigins/{productOriginId}:
+    $ref: ./paths/productOrigins/productOriginId/index.yml
   # ジャンル
   /genres:
     $ref: ./paths/genres/index.yml
@@ -173,6 +174,8 @@ components:
       $ref: ./schemas/models/Product.yml
     ProductImage:
       $ref: ./schemas/models/ProductImage.yml
+    ProductTypeImage:
+      $ref: ./schemas/models/ProductTypeImage.yml
     ProductOrigin:
       $ref: ./schemas/models/ProductOrigin.yml
     ProductRank:

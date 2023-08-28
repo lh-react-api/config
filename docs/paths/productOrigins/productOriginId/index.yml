@@ -1,0 +1,52 @@
+get:
+  tags:
+    - productOrigins
+  summary: 商品原本詳細
+  description:
+    商品の種別が決まっていないと、商品のランクごとに何があるか出せないのでまずは、一意の商品を決めます。<br>
+    ます、３つのリクエスト状態が存在する。<br>
+    <br>
+      1. 何も特定されていない。<br>
+      2.商品種別（色）が特定されている。<br>
+      3.商品種別と商品が特定されている。<br>
+    <br>
+    selectedProductの特定の仕方：<br>
+    　「product_id」が設定されている時は、その商品が設定される<br>
+    　「product_type_id」が設定されているは、選択された「product_type_id」を持つ、在庫がある「products」のなかで一番安いものが設定される<br>
+    　　何もが設定されていない時、在庫がある中で一番安い商品が設定される<br>
+    <br>
+    　　※全てproduct_origin_idに紐づくものです。<br>
+    　　※「product_id」が渡されている場合は「product_type_id」は使われません<br>
+    
+    <br><br>
+    また、「activeProducts」は安い順に並んでいる。<br>
+    また、「productRanks.products」が空の場合はスキップしてもらうと表現しやすいと思います。<br>
+    また、画像は「productTypes」の「ProductTypeImage」を使う想定です。（色などによって変わるが、商品ごとに出すのはしんどいため）<br>
+    また、レビューに関しては、全てproduct_origin_idに紐づくもの商品全てのものを収集しているので、要注意で。<br>
+    必要があれば、その商品種別などで絞ったレビューも出せるので相談ください。
+
+  parameters:
+    - in: query
+      name: product_type_id
+      description: 商品種別ID
+      required: false
+      schema:
+        type: integer
+        description: 商品種別ID
+        example: 1
+    - in: query
+      name: product_id
+      description: 商品ID
+      required: false
+      schema:
+        type: integer
+        description: 商品ID
+        example: 1
+
+  responses:
+    '200':
+      description: '正常応答'
+      content:
+        application/json:
+          schema:
+            $ref: ../../../responses/productOrigins/ProductOriginResponse.yml
