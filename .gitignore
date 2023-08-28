@@ -2,6 +2,7 @@ minio/data
 minio/config
 docs/server
 mysql/data
+mysql_testing/data
 mysql_m1/data
 *.log
 logs

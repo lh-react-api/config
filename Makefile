@@ -55,3 +55,6 @@ generate-type2:
 	docker compose up openapi-generator-server
 rms:
 	docker rm sg_swagger_openapi2aspida && docker rmi config-sg_swagger_openapi2aspida
+
+test:
+	docker compose exec sg_php bash -c "vendor/bin/phpunit tests/Unit/"
