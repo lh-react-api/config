@@ -1,0 +1,75 @@
+title: ProductOriginResponse
+type: object
+allOf:
+  - type: object
+    properties:
+      data:
+        allOf:
+          - $ref: ../../schemas/models/ProductOrigin.yml
+          - type: object
+            properties:
+              selectedProduct:
+                $ref: ../../schemas/models/Product.yml
+          - properties:
+              productTypes:
+                type: array
+                items:
+                  allOf:
+                    - $ref: ../../schemas/models/ProductType.yml
+                    - properties:
+                        productTypeImages:
+                          type: array
+                          items:
+                            $ref: ../../schemas/models/ProductTypeImage.yml
+              productRanks:
+                type: array
+                items:
+                  allOf:
+                    - $ref: ../../schemas/models/ProductRank.yml
+                    - properties:
+                        products:
+                          type: array
+                          items:
+                            $ref: ../../schemas/models/Product.yml
+              productReviews:
+                type: array
+                description: 商品に対するレビューが入っている
+                items:
+                  allOf:
+                    - $ref: ../../schemas/models/ProductReview.yml
+              productReviewNumbers:
+                type: object
+                properties:
+                  1:
+                    type: integer
+                    description: レビュー１の合計
+                    example: 5
+                  2:
+                    type: integer
+                    description: レビュー2の合計
+                    example: 4
+                  3:
+                    type: integer
+                    description: レビュー3の合計
+                    example: 3
+                  4:
+                    type: integer
+                    description: レビュー4の合計
+                    example: 2
+                  5:
+                    type: integer
+                    description: レビュー5の合計
+                    example: 1
+              productReviewNumberAve:
+                type: float
+                description: レビューの平均
+                example: 3.2
+              activeProducts:
+                type: array
+                description: アクティブ（在庫状態）の商品が入っている配列
+                items:
+                  allOf:
+                    - $ref: ../../schemas/models/Product.yml
+
+required:
+  - data
