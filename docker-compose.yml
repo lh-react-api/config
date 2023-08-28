@@ -9,6 +9,7 @@ services:
     tty: true
     depends_on:
       - sg_php
+      - sg_test_mysql
     restart: always
     privileged: true
     command: 
@@ -46,6 +47,22 @@ services:
       - ./mysql/data:/var/lib/mysql
       - ./mysql/logs:/var/log/mysql
 
+  # MySQL
+  sg_test_mysql:
+    container_name: sg_test_mysql
+    build: ./mysql
+    ports:
+      - '13308:3306'
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testing
+      MYSQL_USER: api_user
+      MYSQL_PASSWORD: p@ssw0rd
+      TZ: 'Asia/Tokyo'
+    volumes:
+      - ./mysql_testing/data:/var/lib/mysql
+      - ./mysql_testing/logs:/var/log/mysql
   # MySQL M1チップ用
 #  mysql_m1:
 #    container_name: 'mysql_m1'
@@ -111,7 +128,7 @@ services:
       - 18080:8080
     depends_on:
       - sg_mysql
-
+      - sg_test_mysql
   sg_swagger-ui:
     container_name: sg_swagger
     image: swaggerapi/swagger-ui
