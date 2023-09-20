@@ -1,8 +1,0 @@
-in: path
-name: inquiryTypeId
-description: お問い合わせ種別ID
-required: true
-schema:
-  type: integer
-  description: お問い合わせ種別ID
-  example: 1

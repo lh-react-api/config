@@ -1,8 +1,0 @@
-in: path
-name: orderId
-description: 注文ID
-required: true
-schema:
-  type: integer
-  description: 注文ID
-  example: 1

@@ -1,9 +1,0 @@
-title: DeliverResponse
-type: object
-allOf:
-  - properties:
-      data:
-        type: object
-        $ref: ../../../schemas/models/Deliver.yml
-required:
-  - data

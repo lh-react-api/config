@@ -1,9 +1,0 @@
-title: DeliverTimeResponse
-type: object
-allOf:
-  - properties:
-      data:
-        type: object
-        $ref: ../../../schemas/models/DeliverTime.yml
-required:
-  - data

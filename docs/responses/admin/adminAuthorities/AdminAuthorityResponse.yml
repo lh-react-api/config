@@ -1,9 +1,0 @@
-title: AdminAuthorityResponse
-type: object
-allOf:
-  - properties:
-      data:
-        type: object
-        $ref: ../../../schemas/models/AdminAuthority.yml
-required:
-  - data

@@ -1,8 +1,0 @@
-in: path
-name: roleId
-description: 管理者権限マスタID
-required: true
-schema:
-  type: integer
-  description: 管理者権限マスタID
-  example: 1

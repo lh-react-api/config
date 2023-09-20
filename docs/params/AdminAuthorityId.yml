@@ -1,8 +1,0 @@
-in: path
-name: adminAuthorityId
-description: 管理者権限ID
-required: true
-schema:
-  type: integer
-  description: 管理者権限ID
-  example: 1

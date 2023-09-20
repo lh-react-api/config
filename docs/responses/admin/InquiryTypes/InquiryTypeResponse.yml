@@ -1,9 +1,0 @@
-title: InquiryTypeResponse
-type: object
-allOf:
-  - properties:
-      data:
-        type: object
-        $ref: ../../../schemas/models/InquiryType.yml
-required:
-  - data

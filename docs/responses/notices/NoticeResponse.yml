@@ -1,9 +1,0 @@
-title: NoticeResponse
-type: object
-allOf:
-  - properties:
-      data:
-        type: object
-        $ref: ../../schemas/models/Notice.yml
-required:
-  - data

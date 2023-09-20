@@ -1,9 +1,0 @@
-title: productReviewResponse
-type: object
-allOf:
-  - properties:
-      data:
-        type: object
-        $ref: '../../schemas/models/ProductReview.yml'
-required:
-  - data
