@@ -7,24 +7,22 @@
   ├── api // Laravelプロジェクト
   ```
 
-- configに移動
-```
-cd config
-```
 
-- Docker立ち上げとLaravel初期設定(makeコマンドを参照)
-```
-make init
-```
-
+### 環境構築手順
+- configに移動 `cd config`
+- `make init`でdockerのコンテナ、serverコンテナのnginxを起動する
+-  POST: `http://localhost:8080/api/auth/signin` のAPIを次のパラメータで叩き `{"email": "user@lh.sandbox","password": "pass"}` でログインする。
 - http://localhost:8080 を確認
   - Laravelの初期画面が表示されればOK
 
-- マイグレーション初期化
-```
-php artisan migrate:fresh
-php artisan migrate:fresh --seed
-```
+### APIドキュメント
+http://localhost:8888
+
+### 操作ガイド
+- 各コンテナを起動して、nginxを起動する `make start`
+- データベースをリセットする `make db-fresh`
+- nginxを起動する `make nginx-start`
+  
 
 
 Docker Desktop for Macで `Failed to get D-Bus connection: No such file or directory` 
