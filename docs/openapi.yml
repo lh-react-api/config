@@ -29,6 +29,8 @@ paths:
     $ref: ./paths/items/index.yml
   /items/{itemId}:
     $ref: ./paths/items/itemId/index.yml
+  /carts:
+    $ref: ./paths/carts/index.yml
 components:
   schemas:
     User:
@@ -37,3 +39,5 @@ components:
       $ref: ./schemas/models/Pagination.yml
     Item:
       $ref: ./schemas/models/Item.yml
+    Cart:
+      $ref: ./schemas/models/Cart.yml
