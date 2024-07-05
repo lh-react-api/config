@@ -1,0 +1,4 @@
+title: CartsResponse
+type: array
+items:
+  $ref: ../../schemas/models/Item.yml

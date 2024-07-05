@@ -5,7 +5,7 @@ init:
 	docker compose build && \
 	docker compose up -d && \
 	docker compose exec lh_react_server bash -c "systemctl start nginx && systemctl enable nginx" && \
-	docker compose exec lh_react_php bash -c "composer install && cp .env.local .env && php artisan migrate:fresh --seed"
+	docker compose exec lh_react_php bash -c "composer install && cp .env.local .env && php artisan migrate:fresh --seed && php artisan storage:link"
 
 start:
 	docker compose start  && \
