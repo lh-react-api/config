@@ -4,7 +4,7 @@ properties:
   email:
     type: string
     description: メールアドレス
-    example: "user@lh.sandbox"
+    example: "admin@lh.sandbox"
   password:
     type: string
     description: パスワード
