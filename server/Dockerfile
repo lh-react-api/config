@@ -1,5 +1,5 @@
-FROM centos:7
-
+#FROM centos:7
+FROM rockylinux:8
 # hostとdockerの日付合わせ
 RUN /bin/cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
