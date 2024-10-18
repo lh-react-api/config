@@ -3,16 +3,14 @@ FROM rockylinux:8
 # hostとdockerの日付合わせ
 RUN /bin/cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
-# CentOS 8 ではdnfコマンドがyumに代行する。
-RUN yum update -y
+# パッケージの更新
+RUN dnf update -y
 
 # epel リポジトリをinstall
-RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+RUN dnf -y install epel-release
 
 # nginxのinstall
-RUN yum -y install \
-    nginx \
-    logrotate
+RUN dnf -y install nginx logrotate
 
 # ./default.confをコンテナにコピー（default.confにphpのコンテナを指定して、このコンテナとphpのコンテナを接続させる）
 COPY ./nginx/conf/default.conf /etc/nginx/conf.d/default.conf
